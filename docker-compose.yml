@@ -1,0 +1,41 @@
+version: "3.8"
+services:
+  db:
+    image: postgres:16
+    container_name: pg_docker
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: admin
+      POSTGRES_DB: testdb
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./sql:/sql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U admin -d testdb"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  app:
+    image: python:3.11-slim
+    container_name: etl_app
+    working_dir: /app
+    volumes:
+      - ./app:/app
+      - ./sql:/sql
+      - ./tests:/tests
+      - ./:/project
+      - ./.dbt:/.dbt
+    env_file:
+      - .env
+    depends_on:
+      db:
+        condition: service_healthy
+    # Install requirements each time this container runs, then execute your script
+    command: [ "bash", "-lc", "pip install -r requirements.txt && python main.py" ]
+
+
+volumes:
+  pgdata:

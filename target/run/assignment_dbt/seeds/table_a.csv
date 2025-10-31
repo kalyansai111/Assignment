@@ -1,0 +1,12 @@
+
+    
+    
+    truncate table "testdb"."public"."table_a";
+    -- dbt seed --
+    
+          insert into "testdb"."public"."table_a" ("name", "age", "city") values
+          (%s,%s,%s),(%s,%s,%s),(%s,%s,%s)
+      
+
+;
+  

@@ -1,0 +1,13 @@
+assignment:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: db          # service name in docker-compose.yml
+      port: 5432
+      user: admin
+      password: admin
+      dbname: testdb
+      schema: public    # or use 'dbt' if you prefer isolating
+      threads: 4
+      keepalives_idle: 0

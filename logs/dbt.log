@@ -1,0 +1,1575 @@
+[0m03:37:04.212541 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7edb48bdb690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7edb48bdb390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7edb48bda950>]}
+
+
+============================== 03:37:04.217846 | 7722ad7e-e33e-4ef6-8ecf-f40e7bdd495a ==============================
+[0m03:37:04.217846 [info ] [MainThread]: Running with dbt=1.7.18
+[0m03:37:04.219240 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/.dbt', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': '/project/logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt seed --project-dir /project --profiles-dir /.dbt', 'send_anonymous_usage_stats': 'True'}
+[0m03:37:04.223540 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Could not find profile named 'assignment'
+[0m03:37:04.225165 [debug] [MainThread]: Resource report: {"command_name": "seed", "command_wall_clock_time": 0.043616123, "process_user_time": 1.034401, "process_kernel_time": 0.064148, "process_mem_max_rss": "104276", "process_in_blocks": "2624", "process_out_blocks": "1872", "command_success": false}
+[0m03:37:04.226208 [debug] [MainThread]: Command `dbt seed` failed at 03:37:04.226108 after 0.04 seconds
+[0m03:37:04.227235 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7edb4d834a50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7edb48bd3d90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7edb48bd3150>]}
+[0m03:37:04.228226 [debug] [MainThread]: Flushing usage events
+[0m03:37:04.378135 [debug] [MainThread]: Error sending anonymous usage statistics. Disabling tracking for this execution. If you wish to permanently disable tracking, see: https://docs.getdbt.com/reference/global-configs#send-anonymous-usage-stats.
+[0m04:55:13.191887 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79506decc550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79506de7fb10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79506decd4d0>]}
+
+
+============================== 04:55:13.197321 | 130df11b-a94f-470b-b6bb-0f0c20be804c ==============================
+[0m04:55:13.197321 [info ] [MainThread]: Running with dbt=1.7.18
+[0m04:55:13.199008 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/.dbt', 'version_check': 'True', 'warn_error': 'None', 'log_path': '/project/logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt seed --project-dir /project --profiles-dir /.dbt', 'send_anonymous_usage_stats': 'True'}
+[0m04:55:13.289058 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '130df11b-a94f-470b-b6bb-0f0c20be804c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79506e193050>]}
+[0m04:55:13.322611 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '130df11b-a94f-470b-b6bb-0f0c20be804c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79506debd450>]}
+[0m04:55:13.323976 [info ] [MainThread]: Registered adapter: postgres=1.7.18
+[0m04:55:13.330890 [debug] [MainThread]: checksum: 7ef98830ab3f0215d011ffa635e2417c6313d5b77f40f33d534bad4eb8784f08, vars: {}, profile: , target: , version: 1.7.18
+[0m04:55:13.333351 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m04:55:13.334587 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '130df11b-a94f-470b-b6bb-0f0c20be804c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79506decc390>]}
+[0m04:55:14.024945 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '130df11b-a94f-470b-b6bb-0f0c20be804c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79506c9ca350>]}
+[0m04:55:14.068814 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '130df11b-a94f-470b-b6bb-0f0c20be804c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79506bd46410>]}
+[0m04:55:14.075984 [info ] [MainThread]: Found 2 models, 1 seed, 8 tests, 1 source, 0 exposures, 0 metrics, 401 macros, 0 groups, 0 semantic models
+[0m04:55:14.077676 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '130df11b-a94f-470b-b6bb-0f0c20be804c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79506c9c8890>]}
+[0m04:55:14.084751 [info ] [MainThread]: 
+[0m04:55:14.086529 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m04:55:14.087952 [debug] [ThreadPool]: Acquiring new postgres connection 'list_testdb'
+[0m04:55:14.094551 [debug] [ThreadPool]: Using postgres connection "list_testdb"
+[0m04:55:14.095532 [debug] [ThreadPool]: On list_testdb: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "assignment", "target_name": "dev", "connection_name": "list_testdb"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m04:55:14.096931 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m04:55:14.111075 [debug] [ThreadPool]: SQL status: SELECT 4 in 0.0 seconds
+[0m04:55:14.112729 [debug] [ThreadPool]: On list_testdb: Close
+[0m04:55:14.114400 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_testdb, now list_testdb_public)
+[0m04:55:14.118174 [debug] [ThreadPool]: Using postgres connection "list_testdb_public"
+[0m04:55:14.119100 [debug] [ThreadPool]: On list_testdb_public: BEGIN
+[0m04:55:14.119756 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m04:55:14.123935 [debug] [ThreadPool]: SQL status: BEGIN in 0.0 seconds
+[0m04:55:14.124783 [debug] [ThreadPool]: Using postgres connection "list_testdb_public"
+[0m04:55:14.125535 [debug] [ThreadPool]: On list_testdb_public: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "assignment", "target_name": "dev", "connection_name": "list_testdb_public"} */
+select
+      'testdb' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public'
+    union all
+    select
+      'testdb' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public'
+    union all
+    select
+      'testdb' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'public'
+  
+[0m04:55:14.133302 [debug] [ThreadPool]: SQL status: SELECT 2 in 0.0 seconds
+[0m04:55:14.134692 [debug] [ThreadPool]: On list_testdb_public: ROLLBACK
+[0m04:55:14.135535 [debug] [ThreadPool]: On list_testdb_public: Close
+[0m04:55:14.138783 [debug] [MainThread]: Using postgres connection "master"
+[0m04:55:14.139738 [debug] [MainThread]: On master: BEGIN
+[0m04:55:14.140462 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m04:55:14.145216 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m04:55:14.146459 [debug] [MainThread]: Using postgres connection "master"
+[0m04:55:14.147587 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "assignment", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m04:55:14.153369 [debug] [MainThread]: SQL status: SELECT 0 in 0.0 seconds
+[0m04:55:14.154910 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '130df11b-a94f-470b-b6bb-0f0c20be804c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79506cdc3f50>]}
+[0m04:55:14.155873 [debug] [MainThread]: On master: ROLLBACK
+[0m04:55:14.156786 [debug] [MainThread]: Using postgres connection "master"
+[0m04:55:14.157595 [debug] [MainThread]: On master: BEGIN
+[0m04:55:14.158475 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m04:55:14.159562 [debug] [MainThread]: On master: COMMIT
+[0m04:55:14.160690 [debug] [MainThread]: Using postgres connection "master"
+[0m04:55:14.161312 [debug] [MainThread]: On master: COMMIT
+[0m04:55:14.162087 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m04:55:14.162812 [debug] [MainThread]: On master: Close
+[0m04:55:14.163955 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m04:55:14.165187 [info ] [MainThread]: 
+[0m04:55:14.172436 [debug] [Thread-1 (]: Began running node seed.assignment_dbt.table_a
+[0m04:55:14.173446 [info ] [Thread-1 (]: 1 of 1 START seed file public.table_a .......................................... [RUN]
+[0m04:55:14.174830 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_testdb_public, now seed.assignment_dbt.table_a)
+[0m04:55:14.176146 [debug] [Thread-1 (]: Began compiling node seed.assignment_dbt.table_a
+[0m04:55:14.177450 [debug] [Thread-1 (]: Timing info for seed.assignment_dbt.table_a (compile): 04:55:14.177295 => 04:55:14.177298
+[0m04:55:14.178646 [debug] [Thread-1 (]: Began executing node seed.assignment_dbt.table_a
+[0m04:55:14.200158 [debug] [Thread-1 (]: Using postgres connection "seed.assignment_dbt.table_a"
+[0m04:55:14.201154 [debug] [Thread-1 (]: On seed.assignment_dbt.table_a: BEGIN
+[0m04:55:14.202149 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m04:55:14.208246 [debug] [Thread-1 (]: SQL status: BEGIN in 0.0 seconds
+[0m04:55:14.209174 [debug] [Thread-1 (]: Using postgres connection "seed.assignment_dbt.table_a"
+[0m04:55:14.209914 [debug] [Thread-1 (]: On seed.assignment_dbt.table_a: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "assignment", "target_name": "dev", "node_id": "seed.assignment_dbt.table_a"} */
+truncate table "testdb"."public"."table_a"
+[0m04:55:14.217989 [debug] [Thread-1 (]: SQL status: TRUNCATE TABLE in 0.0 seconds
+[0m04:55:14.227781 [debug] [Thread-1 (]: Using postgres connection "seed.assignment_dbt.table_a"
+[0m04:55:14.228784 [debug] [Thread-1 (]: On seed.assignment_dbt.table_a: 
+          insert into "testdb"."public"."table_a" ("name", "age", "city") values
+          (%s,%s,%s),(%s,%s,%s),(%s,%s,%s)
+      ...
+[0m04:55:14.230409 [debug] [Thread-1 (]: SQL status: INSERT 0 3 in 0.0 seconds
+[0m04:55:14.234301 [debug] [Thread-1 (]: Writing runtime SQL for node "seed.assignment_dbt.table_a"
+[0m04:55:14.253271 [debug] [Thread-1 (]: On seed.assignment_dbt.table_a: COMMIT
+[0m04:55:14.259349 [debug] [Thread-1 (]: Using postgres connection "seed.assignment_dbt.table_a"
+[0m04:55:14.260237 [debug] [Thread-1 (]: On seed.assignment_dbt.table_a: COMMIT
+[0m04:55:14.264745 [debug] [Thread-1 (]: SQL status: COMMIT in 0.0 seconds
+[0m04:55:14.265933 [debug] [Thread-1 (]: Timing info for seed.assignment_dbt.table_a (execute): 04:55:14.180554 => 04:55:14.265819
+[0m04:55:14.266671 [debug] [Thread-1 (]: On seed.assignment_dbt.table_a: Close
+[0m04:55:14.267629 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '130df11b-a94f-470b-b6bb-0f0c20be804c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79506bdc4190>]}
+[0m04:55:14.268416 [info ] [Thread-1 (]: 1 of 1 OK loaded seed file public.table_a ...................................... [[32mINSERT 3[0m in 0.09s]
+[0m04:55:14.270016 [debug] [Thread-1 (]: Finished running node seed.assignment_dbt.table_a
+[0m04:55:14.273207 [debug] [MainThread]: Using postgres connection "master"
+[0m04:55:14.277079 [debug] [MainThread]: On master: BEGIN
+[0m04:55:14.277959 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m04:55:14.282571 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m04:55:14.283363 [debug] [MainThread]: On master: COMMIT
+[0m04:55:14.283979 [debug] [MainThread]: Using postgres connection "master"
+[0m04:55:14.285016 [debug] [MainThread]: On master: COMMIT
+[0m04:55:14.285788 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m04:55:14.286458 [debug] [MainThread]: On master: Close
+[0m04:55:14.287277 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m04:55:14.287907 [debug] [MainThread]: Connection 'seed.assignment_dbt.table_a' was properly closed.
+[0m04:55:14.288615 [info ] [MainThread]: 
+[0m04:55:14.289740 [info ] [MainThread]: Finished running 1 seed in 0 hours 0 minutes and 0.20 seconds (0.20s).
+[0m04:55:14.291254 [debug] [MainThread]: Command end result
+[0m04:55:14.306775 [info ] [MainThread]: 
+[0m04:55:14.308226 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m04:55:14.309803 [info ] [MainThread]: 
+[0m04:55:14.311332 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m04:55:14.314753 [debug] [MainThread]: Resource report: {"command_name": "seed", "command_success": true, "command_wall_clock_time": 1.1619536, "process_user_time": 1.807772, "process_kernel_time": 0.160334, "process_mem_max_rss": "125500", "process_in_blocks": "6696", "process_out_blocks": "1968"}
+[0m04:55:14.316826 [debug] [MainThread]: Command `dbt seed` succeeded at 04:55:14.316715 after 1.16 seconds
+[0m04:55:14.318951 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79506f21df10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79506e1929d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79506f659050>]}
+[0m04:55:14.320274 [debug] [MainThread]: Flushing usage events
+[0m04:56:06.474894 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7976aa96ac50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7976aadc4790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7976aa96ab50>]}
+
+
+============================== 04:56:06.479485 | dc77d157-c86e-41b9-86a2-e9afae8a3237 ==============================
+[0m04:56:06.479485 [info ] [MainThread]: Running with dbt=1.7.18
+[0m04:56:06.481163 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': '/project/logs', 'fail_fast': 'False', 'profiles_dir': '/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt run --project-dir /project --profiles-dir /.dbt', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m04:56:06.566921 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'dc77d157-c86e-41b9-86a2-e9afae8a3237', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7976aa967a90>]}
+[0m04:56:06.601701 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'dc77d157-c86e-41b9-86a2-e9afae8a3237', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7976a9f1d4d0>]}
+[0m04:56:06.603847 [info ] [MainThread]: Registered adapter: postgres=1.7.18
+[0m04:56:06.610300 [debug] [MainThread]: checksum: 7ef98830ab3f0215d011ffa635e2417c6313d5b77f40f33d534bad4eb8784f08, vars: {}, profile: , target: , version: 1.7.18
+[0m04:56:06.697732 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m04:56:06.698613 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m04:56:06.702423 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'dc77d157-c86e-41b9-86a2-e9afae8a3237', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7976a9bbd350>]}
+[0m04:56:06.722007 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'dc77d157-c86e-41b9-86a2-e9afae8a3237', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7976a9f79a50>]}
+[0m04:56:06.726351 [info ] [MainThread]: Found 2 models, 1 seed, 8 tests, 1 source, 0 exposures, 0 metrics, 401 macros, 0 groups, 0 semantic models
+[0m04:56:06.728958 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'dc77d157-c86e-41b9-86a2-e9afae8a3237', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7976a9fec090>]}
+[0m04:56:06.731510 [info ] [MainThread]: 
+[0m04:56:06.733401 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m04:56:06.735520 [debug] [ThreadPool]: Acquiring new postgres connection 'list_testdb'
+[0m04:56:06.743392 [debug] [ThreadPool]: Using postgres connection "list_testdb"
+[0m04:56:06.744450 [debug] [ThreadPool]: On list_testdb: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "assignment", "target_name": "dev", "connection_name": "list_testdb"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m04:56:06.745093 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m04:56:06.752342 [debug] [ThreadPool]: SQL status: SELECT 4 in 0.0 seconds
+[0m04:56:06.753658 [debug] [ThreadPool]: On list_testdb: Close
+[0m04:56:06.755636 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_testdb, now list_testdb_public)
+[0m04:56:06.759732 [debug] [ThreadPool]: Using postgres connection "list_testdb_public"
+[0m04:56:06.760827 [debug] [ThreadPool]: On list_testdb_public: BEGIN
+[0m04:56:06.761485 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m04:56:06.765840 [debug] [ThreadPool]: SQL status: BEGIN in 0.0 seconds
+[0m04:56:06.766576 [debug] [ThreadPool]: Using postgres connection "list_testdb_public"
+[0m04:56:06.767133 [debug] [ThreadPool]: On list_testdb_public: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "assignment", "target_name": "dev", "connection_name": "list_testdb_public"} */
+select
+      'testdb' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public'
+    union all
+    select
+      'testdb' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public'
+    union all
+    select
+      'testdb' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'public'
+  
+[0m04:56:06.769364 [debug] [ThreadPool]: SQL status: SELECT 2 in 0.0 seconds
+[0m04:56:06.770696 [debug] [ThreadPool]: On list_testdb_public: ROLLBACK
+[0m04:56:06.771939 [debug] [ThreadPool]: On list_testdb_public: Close
+[0m04:56:06.775362 [debug] [MainThread]: Using postgres connection "master"
+[0m04:56:06.776050 [debug] [MainThread]: On master: BEGIN
+[0m04:56:06.776577 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m04:56:06.780326 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m04:56:06.781111 [debug] [MainThread]: Using postgres connection "master"
+[0m04:56:06.781744 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "assignment", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m04:56:06.784306 [debug] [MainThread]: SQL status: SELECT 0 in 0.0 seconds
+[0m04:56:06.785522 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'dc77d157-c86e-41b9-86a2-e9afae8a3237', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7976aa8d9810>]}
+[0m04:56:06.786445 [debug] [MainThread]: On master: ROLLBACK
+[0m04:56:06.787800 [debug] [MainThread]: Using postgres connection "master"
+[0m04:56:06.789049 [debug] [MainThread]: On master: BEGIN
+[0m04:56:06.789910 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m04:56:06.790542 [debug] [MainThread]: On master: COMMIT
+[0m04:56:06.791215 [debug] [MainThread]: Using postgres connection "master"
+[0m04:56:06.792265 [debug] [MainThread]: On master: COMMIT
+[0m04:56:06.792923 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m04:56:06.793836 [debug] [MainThread]: On master: Close
+[0m04:56:06.794695 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m04:56:06.795927 [info ] [MainThread]: 
+[0m04:56:06.802547 [debug] [Thread-1 (]: Began running node model.assignment_dbt.stg_table_a
+[0m04:56:06.803569 [info ] [Thread-1 (]: 1 of 2 START sql view model public.stg_table_a ................................. [RUN]
+[0m04:56:06.804870 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_testdb_public, now model.assignment_dbt.stg_table_a)
+[0m04:56:06.805764 [debug] [Thread-1 (]: Began compiling node model.assignment_dbt.stg_table_a
+[0m04:56:06.810458 [debug] [Thread-1 (]: Writing injected SQL for node "model.assignment_dbt.stg_table_a"
+[0m04:56:06.826364 [debug] [Thread-1 (]: Timing info for model.assignment_dbt.stg_table_a (compile): 04:56:06.806351 => 04:56:06.826092
+[0m04:56:06.828615 [debug] [Thread-1 (]: Began executing node model.assignment_dbt.stg_table_a
+[0m04:56:06.853931 [debug] [Thread-1 (]: Writing runtime sql for node "model.assignment_dbt.stg_table_a"
+[0m04:56:06.872147 [debug] [Thread-1 (]: Using postgres connection "model.assignment_dbt.stg_table_a"
+[0m04:56:06.873382 [debug] [Thread-1 (]: On model.assignment_dbt.stg_table_a: BEGIN
+[0m04:56:06.874298 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m04:56:06.879965 [debug] [Thread-1 (]: SQL status: BEGIN in 0.0 seconds
+[0m04:56:06.882345 [debug] [Thread-1 (]: Using postgres connection "model.assignment_dbt.stg_table_a"
+[0m04:56:06.883217 [debug] [Thread-1 (]: On model.assignment_dbt.stg_table_a: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "assignment", "target_name": "dev", "node_id": "model.assignment_dbt.stg_table_a"} */
+
+  create view "testdb"."public"."stg_table_a__dbt_tmp"
+    
+    
+  as (
+    
+
+select
+  name,
+  age,
+  city
+from "testdb"."public"."table_a"
+  );
+[0m04:56:06.891019 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.0 seconds
+[0m04:56:06.894992 [debug] [Thread-1 (]: Using postgres connection "model.assignment_dbt.stg_table_a"
+[0m04:56:06.895763 [debug] [Thread-1 (]: On model.assignment_dbt.stg_table_a: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "assignment", "target_name": "dev", "node_id": "model.assignment_dbt.stg_table_a"} */
+alter table "testdb"."public"."stg_table_a__dbt_tmp" rename to "stg_table_a"
+[0m04:56:06.896809 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m04:56:06.904528 [debug] [Thread-1 (]: On model.assignment_dbt.stg_table_a: COMMIT
+[0m04:56:06.905282 [debug] [Thread-1 (]: Using postgres connection "model.assignment_dbt.stg_table_a"
+[0m04:56:06.905850 [debug] [Thread-1 (]: On model.assignment_dbt.stg_table_a: COMMIT
+[0m04:56:06.908033 [debug] [Thread-1 (]: SQL status: COMMIT in 0.0 seconds
+[0m04:56:06.911914 [debug] [Thread-1 (]: Applying DROP to: "testdb"."public"."stg_table_a__dbt_backup"
+[0m04:56:06.916483 [debug] [Thread-1 (]: Using postgres connection "model.assignment_dbt.stg_table_a"
+[0m04:56:06.917747 [debug] [Thread-1 (]: On model.assignment_dbt.stg_table_a: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "assignment", "target_name": "dev", "node_id": "model.assignment_dbt.stg_table_a"} */
+drop view if exists "testdb"."public"."stg_table_a__dbt_backup" cascade
+[0m04:56:06.919709 [debug] [Thread-1 (]: SQL status: DROP VIEW in 0.0 seconds
+[0m04:56:06.921293 [debug] [Thread-1 (]: Timing info for model.assignment_dbt.stg_table_a (execute): 04:56:06.833425 => 04:56:06.921186
+[0m04:56:06.922244 [debug] [Thread-1 (]: On model.assignment_dbt.stg_table_a: Close
+[0m04:56:06.923560 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'dc77d157-c86e-41b9-86a2-e9afae8a3237', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7976aa9df890>]}
+[0m04:56:06.924980 [info ] [Thread-1 (]: 1 of 2 OK created sql view model public.stg_table_a ............................ [[32mCREATE VIEW[0m in 0.12s]
+[0m04:56:06.926423 [debug] [Thread-1 (]: Finished running node model.assignment_dbt.stg_table_a
+[0m04:56:06.928084 [debug] [Thread-3 (]: Began running node model.assignment_dbt.table_b
+[0m04:56:06.929239 [info ] [Thread-3 (]: 2 of 2 START sql table model public.table_b .................................... [RUN]
+[0m04:56:06.930706 [debug] [Thread-3 (]: Acquiring new postgres connection 'model.assignment_dbt.table_b'
+[0m04:56:06.931981 [debug] [Thread-3 (]: Began compiling node model.assignment_dbt.table_b
+[0m04:56:06.935064 [debug] [Thread-3 (]: Writing injected SQL for node "model.assignment_dbt.table_b"
+[0m04:56:06.948887 [debug] [Thread-3 (]: Timing info for model.assignment_dbt.table_b (compile): 04:56:06.933055 => 04:56:06.948680
+[0m04:56:06.949896 [debug] [Thread-3 (]: Began executing node model.assignment_dbt.table_b
+[0m04:56:06.971526 [debug] [Thread-3 (]: Writing runtime sql for node "model.assignment_dbt.table_b"
+[0m04:56:06.985187 [debug] [Thread-3 (]: Using postgres connection "model.assignment_dbt.table_b"
+[0m04:56:06.986222 [debug] [Thread-3 (]: On model.assignment_dbt.table_b: BEGIN
+[0m04:56:06.987405 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m04:56:06.993330 [debug] [Thread-3 (]: SQL status: BEGIN in 0.0 seconds
+[0m04:56:06.996801 [debug] [Thread-3 (]: Using postgres connection "model.assignment_dbt.table_b"
+[0m04:56:06.997732 [debug] [Thread-3 (]: On model.assignment_dbt.table_b: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "assignment", "target_name": "dev", "node_id": "model.assignment_dbt.table_b"} */
+
+  
+    
+
+  create  table "testdb"."public"."table_b__dbt_tmp"
+  
+  
+    as
+  
+  (
+    
+
+with src as (
+  select name, age, city
+  from "testdb"."public"."stg_table_a"
+)
+select
+  name,
+  age,
+  city,
+  case when age < 30 then 'YOUNG' else 'ADULT' end as category
+from src
+  );
+  
+[0m04:56:07.004962 [debug] [Thread-3 (]: SQL status: SELECT 3 in 0.0 seconds
+[0m04:56:07.007362 [debug] [Thread-3 (]: Using postgres connection "model.assignment_dbt.table_b"
+[0m04:56:07.008629 [debug] [Thread-3 (]: On model.assignment_dbt.table_b: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "assignment", "target_name": "dev", "node_id": "model.assignment_dbt.table_b"} */
+alter table "testdb"."public"."table_b" rename to "table_b__dbt_backup"
+[0m04:56:07.009671 [debug] [Thread-3 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m04:56:07.011936 [debug] [Thread-3 (]: Using postgres connection "model.assignment_dbt.table_b"
+[0m04:56:07.013082 [debug] [Thread-3 (]: On model.assignment_dbt.table_b: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "assignment", "target_name": "dev", "node_id": "model.assignment_dbt.table_b"} */
+alter table "testdb"."public"."table_b__dbt_tmp" rename to "table_b"
+[0m04:56:07.014146 [debug] [Thread-3 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m04:56:07.018548 [debug] [Thread-3 (]: On model.assignment_dbt.table_b: COMMIT
+[0m04:56:07.019239 [debug] [Thread-3 (]: Using postgres connection "model.assignment_dbt.table_b"
+[0m04:56:07.019805 [debug] [Thread-3 (]: On model.assignment_dbt.table_b: COMMIT
+[0m04:56:07.021237 [debug] [Thread-3 (]: SQL status: COMMIT in 0.0 seconds
+[0m04:56:07.022954 [debug] [Thread-3 (]: Applying DROP to: "testdb"."public"."table_b__dbt_backup"
+[0m04:56:07.026168 [debug] [Thread-3 (]: Using postgres connection "model.assignment_dbt.table_b"
+[0m04:56:07.027382 [debug] [Thread-3 (]: On model.assignment_dbt.table_b: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "assignment", "target_name": "dev", "node_id": "model.assignment_dbt.table_b"} */
+drop table if exists "testdb"."public"."table_b__dbt_backup" cascade
+[0m04:56:07.033208 [debug] [Thread-3 (]: SQL status: DROP TABLE in 0.0 seconds
+[0m04:56:07.035538 [debug] [Thread-3 (]: Timing info for model.assignment_dbt.table_b (execute): 04:56:06.960096 => 04:56:07.035435
+[0m04:56:07.037208 [debug] [Thread-3 (]: On model.assignment_dbt.table_b: Close
+[0m04:56:07.038923 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'dc77d157-c86e-41b9-86a2-e9afae8a3237', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7976aa9b8a10>]}
+[0m04:56:07.040547 [info ] [Thread-3 (]: 2 of 2 OK created sql table model public.table_b ............................... [[32mSELECT 3[0m in 0.11s]
+[0m04:56:07.041918 [debug] [Thread-3 (]: Finished running node model.assignment_dbt.table_b
+[0m04:56:07.043948 [debug] [MainThread]: Using postgres connection "master"
+[0m04:56:07.044740 [debug] [MainThread]: On master: BEGIN
+[0m04:56:07.045499 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m04:56:07.050381 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m04:56:07.051213 [debug] [MainThread]: On master: COMMIT
+[0m04:56:07.052005 [debug] [MainThread]: Using postgres connection "master"
+[0m04:56:07.052757 [debug] [MainThread]: On master: COMMIT
+[0m04:56:07.053580 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m04:56:07.054509 [debug] [MainThread]: On master: Close
+[0m04:56:07.055646 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m04:56:07.056488 [debug] [MainThread]: Connection 'model.assignment_dbt.stg_table_a' was properly closed.
+[0m04:56:07.057295 [debug] [MainThread]: Connection 'model.assignment_dbt.table_b' was properly closed.
+[0m04:56:07.058161 [info ] [MainThread]: 
+[0m04:56:07.059041 [info ] [MainThread]: Finished running 1 view model, 1 table model in 0 hours 0 minutes and 0.33 seconds (0.33s).
+[0m04:56:07.060374 [debug] [MainThread]: Command end result
+[0m04:56:07.083841 [info ] [MainThread]: 
+[0m04:56:07.085005 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m04:56:07.086096 [info ] [MainThread]: 
+[0m04:56:07.087063 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 TOTAL=2
+[0m04:56:07.088621 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 0.6475354, "process_user_time": 1.255681, "process_kernel_time": 0.131313, "process_mem_max_rss": "119364", "process_out_blocks": "1968", "process_in_blocks": "0"}
+[0m04:56:07.089627 [debug] [MainThread]: Command `dbt run` succeeded at 04:56:07.089525 after 0.65 seconds
+[0m04:56:07.090560 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7976af595810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7976af5949d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7976aa966e10>]}
+[0m04:56:07.091822 [debug] [MainThread]: Flushing usage events
+[0m04:56:46.506636 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x702184c2c150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x702184c2c590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x702184c2d1d0>]}
+
+
+============================== 04:56:46.510777 | 5f5a11e6-f3db-4333-91a8-2bbf4eb32085 ==============================
+[0m04:56:46.510777 [info ] [MainThread]: Running with dbt=1.7.18
+[0m04:56:46.512201 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/.dbt', 'version_check': 'True', 'warn_error': 'None', 'log_path': '/project/logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt test --project-dir /project --profiles-dir /.dbt', 'send_anonymous_usage_stats': 'True'}
+[0m04:56:46.600854 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '5f5a11e6-f3db-4333-91a8-2bbf4eb32085', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x702184b03bd0>]}
+[0m04:56:46.637061 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '5f5a11e6-f3db-4333-91a8-2bbf4eb32085', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70218413f650>]}
+[0m04:56:46.639149 [info ] [MainThread]: Registered adapter: postgres=1.7.18
+[0m04:56:46.645112 [debug] [MainThread]: checksum: 7ef98830ab3f0215d011ffa635e2417c6313d5b77f40f33d534bad4eb8784f08, vars: {}, profile: , target: , version: 1.7.18
+[0m04:56:46.739927 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m04:56:46.741294 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m04:56:46.745762 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '5f5a11e6-f3db-4333-91a8-2bbf4eb32085', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x702184bdf990>]}
+[0m04:56:46.780056 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '5f5a11e6-f3db-4333-91a8-2bbf4eb32085', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x702184c32690>]}
+[0m04:56:46.781652 [info ] [MainThread]: Found 2 models, 1 seed, 8 tests, 1 source, 0 exposures, 0 metrics, 401 macros, 0 groups, 0 semantic models
+[0m04:56:46.783068 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '5f5a11e6-f3db-4333-91a8-2bbf4eb32085', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x702183d28050>]}
+[0m04:56:46.791418 [info ] [MainThread]: 
+[0m04:56:46.794076 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m04:56:46.796514 [debug] [ThreadPool]: Acquiring new postgres connection 'list_testdb_public'
+[0m04:56:46.804204 [debug] [ThreadPool]: Using postgres connection "list_testdb_public"
+[0m04:56:46.805169 [debug] [ThreadPool]: On list_testdb_public: BEGIN
+[0m04:56:46.805786 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m04:56:46.811234 [debug] [ThreadPool]: SQL status: BEGIN in 0.0 seconds
+[0m04:56:46.812209 [debug] [ThreadPool]: Using postgres connection "list_testdb_public"
+[0m04:56:46.813017 [debug] [ThreadPool]: On list_testdb_public: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "assignment", "target_name": "dev", "connection_name": "list_testdb_public"} */
+select
+      'testdb' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public'
+    union all
+    select
+      'testdb' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public'
+    union all
+    select
+      'testdb' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'public'
+  
+[0m04:56:46.815665 [debug] [ThreadPool]: SQL status: SELECT 3 in 0.0 seconds
+[0m04:56:46.816939 [debug] [ThreadPool]: On list_testdb_public: ROLLBACK
+[0m04:56:46.817718 [debug] [ThreadPool]: On list_testdb_public: Close
+[0m04:56:46.821249 [debug] [MainThread]: Using postgres connection "master"
+[0m04:56:46.822263 [debug] [MainThread]: On master: BEGIN
+[0m04:56:46.823304 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m04:56:46.829929 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m04:56:46.830556 [debug] [MainThread]: Using postgres connection "master"
+[0m04:56:46.831315 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "assignment", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m04:56:46.834210 [debug] [MainThread]: SQL status: SELECT 1 in 0.0 seconds
+[0m04:56:46.835696 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '5f5a11e6-f3db-4333-91a8-2bbf4eb32085', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x702184b02390>]}
+[0m04:56:46.836602 [debug] [MainThread]: On master: ROLLBACK
+[0m04:56:46.837568 [debug] [MainThread]: Using postgres connection "master"
+[0m04:56:46.838929 [debug] [MainThread]: On master: BEGIN
+[0m04:56:46.840591 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m04:56:46.841315 [debug] [MainThread]: On master: COMMIT
+[0m04:56:46.841976 [debug] [MainThread]: Using postgres connection "master"
+[0m04:56:46.842603 [debug] [MainThread]: On master: COMMIT
+[0m04:56:46.843336 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m04:56:46.844020 [debug] [MainThread]: On master: Close
+[0m04:56:46.844948 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m04:56:46.846042 [info ] [MainThread]: 
+[0m04:56:46.852384 [debug] [Thread-1 (]: Began running node test.assignment_dbt.not_null_stg_table_a_age.91cd833ec3
+[0m04:56:46.852731 [debug] [Thread-2 (]: Began running node test.assignment_dbt.not_null_stg_table_a_city.c13a77747f
+[0m04:56:46.853085 [debug] [Thread-3 (]: Began running node test.assignment_dbt.not_null_stg_table_a_name.98883deb57
+[0m04:56:46.853340 [debug] [Thread-4 (]: Began running node test.assignment_dbt.not_null_table_b_age.286df43aec
+[0m04:56:46.853740 [info ] [Thread-1 (]: 1 of 8 START test not_null_stg_table_a_age ..................................... [RUN]
+[0m04:56:46.854645 [info ] [Thread-2 (]: 2 of 8 START test not_null_stg_table_a_city .................................... [RUN]
+[0m04:56:46.855462 [info ] [Thread-3 (]: 3 of 8 START test not_null_stg_table_a_name .................................... [RUN]
+[0m04:56:46.856600 [info ] [Thread-4 (]: 4 of 8 START test not_null_table_b_age ......................................... [RUN]
+[0m04:56:46.857620 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_testdb_public, now test.assignment_dbt.not_null_stg_table_a_age.91cd833ec3)
+[0m04:56:46.858839 [debug] [Thread-2 (]: Acquiring new postgres connection 'test.assignment_dbt.not_null_stg_table_a_city.c13a77747f'
+[0m04:56:46.859824 [debug] [Thread-3 (]: Acquiring new postgres connection 'test.assignment_dbt.not_null_stg_table_a_name.98883deb57'
+[0m04:56:46.860748 [debug] [Thread-4 (]: Acquiring new postgres connection 'test.assignment_dbt.not_null_table_b_age.286df43aec'
+[0m04:56:46.861558 [debug] [Thread-1 (]: Began compiling node test.assignment_dbt.not_null_stg_table_a_age.91cd833ec3
+[0m04:56:46.862819 [debug] [Thread-2 (]: Began compiling node test.assignment_dbt.not_null_stg_table_a_city.c13a77747f
+[0m04:56:46.863613 [debug] [Thread-3 (]: Began compiling node test.assignment_dbt.not_null_stg_table_a_name.98883deb57
+[0m04:56:46.864202 [debug] [Thread-4 (]: Began compiling node test.assignment_dbt.not_null_table_b_age.286df43aec
+[0m04:56:46.874059 [debug] [Thread-1 (]: Writing injected SQL for node "test.assignment_dbt.not_null_stg_table_a_age.91cd833ec3"
+[0m04:56:46.876818 [debug] [Thread-2 (]: Writing injected SQL for node "test.assignment_dbt.not_null_stg_table_a_city.c13a77747f"
+[0m04:56:46.880047 [debug] [Thread-3 (]: Writing injected SQL for node "test.assignment_dbt.not_null_stg_table_a_name.98883deb57"
+[0m04:56:46.882692 [debug] [Thread-4 (]: Writing injected SQL for node "test.assignment_dbt.not_null_table_b_age.286df43aec"
+[0m04:56:46.892514 [debug] [Thread-1 (]: Timing info for test.assignment_dbt.not_null_stg_table_a_age.91cd833ec3 (compile): 04:56:46.864742 => 04:56:46.892349
+[0m04:56:46.894220 [debug] [Thread-1 (]: Began executing node test.assignment_dbt.not_null_stg_table_a_age.91cd833ec3
+[0m04:56:46.895724 [debug] [Thread-3 (]: Timing info for test.assignment_dbt.not_null_stg_table_a_name.98883deb57 (compile): 04:56:46.877605 => 04:56:46.895592
+[0m04:56:46.904338 [debug] [Thread-1 (]: Writing runtime sql for node "test.assignment_dbt.not_null_stg_table_a_age.91cd833ec3"
+[0m04:56:46.904808 [debug] [Thread-2 (]: Timing info for test.assignment_dbt.not_null_stg_table_a_city.c13a77747f (compile): 04:56:46.874661 => 04:56:46.904652
+[0m04:56:46.906064 [debug] [Thread-3 (]: Began executing node test.assignment_dbt.not_null_stg_table_a_name.98883deb57
+[0m04:56:46.909602 [debug] [Thread-4 (]: Timing info for test.assignment_dbt.not_null_table_b_age.286df43aec (compile): 04:56:46.880733 => 04:56:46.909451
+[0m04:56:46.916127 [debug] [Thread-2 (]: Began executing node test.assignment_dbt.not_null_stg_table_a_city.c13a77747f
+[0m04:56:46.919884 [debug] [Thread-3 (]: Writing runtime sql for node "test.assignment_dbt.not_null_stg_table_a_name.98883deb57"
+[0m04:56:46.920845 [debug] [Thread-4 (]: Began executing node test.assignment_dbt.not_null_table_b_age.286df43aec
+[0m04:56:46.922465 [debug] [Thread-2 (]: Writing runtime sql for node "test.assignment_dbt.not_null_stg_table_a_city.c13a77747f"
+[0m04:56:46.924780 [debug] [Thread-4 (]: Writing runtime sql for node "test.assignment_dbt.not_null_table_b_age.286df43aec"
+[0m04:56:46.926662 [debug] [Thread-1 (]: Using postgres connection "test.assignment_dbt.not_null_stg_table_a_age.91cd833ec3"
+[0m04:56:46.927403 [debug] [Thread-1 (]: On test.assignment_dbt.not_null_stg_table_a_age.91cd833ec3: BEGIN
+[0m04:56:46.928380 [debug] [Thread-3 (]: Using postgres connection "test.assignment_dbt.not_null_stg_table_a_name.98883deb57"
+[0m04:56:46.928942 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m04:56:46.930596 [debug] [Thread-3 (]: On test.assignment_dbt.not_null_stg_table_a_name.98883deb57: BEGIN
+[0m04:56:46.931004 [debug] [Thread-2 (]: Using postgres connection "test.assignment_dbt.not_null_stg_table_a_city.c13a77747f"
+[0m04:56:46.933905 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m04:56:46.937175 [debug] [Thread-1 (]: SQL status: BEGIN in 0.0 seconds
+[0m04:56:46.940388 [debug] [Thread-4 (]: Using postgres connection "test.assignment_dbt.not_null_table_b_age.286df43aec"
+[0m04:56:46.940674 [debug] [Thread-2 (]: On test.assignment_dbt.not_null_stg_table_a_city.c13a77747f: BEGIN
+[0m04:56:46.946120 [debug] [Thread-1 (]: Using postgres connection "test.assignment_dbt.not_null_stg_table_a_age.91cd833ec3"
+[0m04:56:46.947437 [debug] [Thread-3 (]: SQL status: BEGIN in 0.0 seconds
+[0m04:56:46.948020 [debug] [Thread-4 (]: On test.assignment_dbt.not_null_table_b_age.286df43aec: BEGIN
+[0m04:56:46.949358 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m04:56:46.950676 [debug] [Thread-1 (]: On test.assignment_dbt.not_null_stg_table_a_age.91cd833ec3: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "assignment", "target_name": "dev", "node_id": "test.assignment_dbt.not_null_stg_table_a_age.91cd833ec3"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select age
+from "testdb"."public"."stg_table_a"
+where age is null
+
+
+
+      
+    ) dbt_internal_test
+[0m04:56:46.951828 [debug] [Thread-3 (]: Using postgres connection "test.assignment_dbt.not_null_stg_table_a_name.98883deb57"
+[0m04:56:46.952768 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m04:56:46.954946 [debug] [Thread-3 (]: On test.assignment_dbt.not_null_stg_table_a_name.98883deb57: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "assignment", "target_name": "dev", "node_id": "test.assignment_dbt.not_null_stg_table_a_name.98883deb57"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select name
+from "testdb"."public"."stg_table_a"
+where name is null
+
+
+
+      
+    ) dbt_internal_test
+[0m04:56:46.955345 [debug] [Thread-1 (]: SQL status: SELECT 1 in 0.0 seconds
+[0m04:56:46.956969 [debug] [Thread-2 (]: SQL status: BEGIN in 0.0 seconds
+[0m04:56:46.957476 [debug] [Thread-3 (]: SQL status: SELECT 1 in 0.0 seconds
+[0m04:56:46.959115 [debug] [Thread-1 (]: Timing info for test.assignment_dbt.not_null_stg_table_a_age.91cd833ec3 (execute): 04:56:46.896615 => 04:56:46.958981
+[0m04:56:46.959581 [debug] [Thread-4 (]: SQL status: BEGIN in 0.0 seconds
+[0m04:56:46.960171 [debug] [Thread-2 (]: Using postgres connection "test.assignment_dbt.not_null_stg_table_a_city.c13a77747f"
+[0m04:56:46.961602 [debug] [Thread-3 (]: Timing info for test.assignment_dbt.not_null_stg_table_a_name.98883deb57 (execute): 04:56:46.918590 => 04:56:46.961448
+[0m04:56:46.962458 [debug] [Thread-1 (]: On test.assignment_dbt.not_null_stg_table_a_age.91cd833ec3: ROLLBACK
+[0m04:56:46.963302 [debug] [Thread-4 (]: Using postgres connection "test.assignment_dbt.not_null_table_b_age.286df43aec"
+[0m04:56:46.964094 [debug] [Thread-2 (]: On test.assignment_dbt.not_null_stg_table_a_city.c13a77747f: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "assignment", "target_name": "dev", "node_id": "test.assignment_dbt.not_null_stg_table_a_city.c13a77747f"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select city
+from "testdb"."public"."stg_table_a"
+where city is null
+
+
+
+      
+    ) dbt_internal_test
+[0m04:56:46.964961 [debug] [Thread-3 (]: On test.assignment_dbt.not_null_stg_table_a_name.98883deb57: ROLLBACK
+[0m04:56:46.965831 [debug] [Thread-1 (]: On test.assignment_dbt.not_null_stg_table_a_age.91cd833ec3: Close
+[0m04:56:46.966467 [debug] [Thread-4 (]: On test.assignment_dbt.not_null_table_b_age.286df43aec: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "assignment", "target_name": "dev", "node_id": "test.assignment_dbt.not_null_table_b_age.286df43aec"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select age
+from "testdb"."public"."table_b"
+where age is null
+
+
+
+      
+    ) dbt_internal_test
+[0m04:56:46.967984 [debug] [Thread-2 (]: SQL status: SELECT 1 in 0.0 seconds
+[0m04:56:46.968279 [debug] [Thread-3 (]: On test.assignment_dbt.not_null_stg_table_a_name.98883deb57: Close
+[0m04:56:46.969232 [info ] [Thread-1 (]: 1 of 8 PASS not_null_stg_table_a_age ........................................... [[32mPASS[0m in 0.11s]
+[0m04:56:46.970408 [debug] [Thread-4 (]: SQL status: SELECT 1 in 0.0 seconds
+[0m04:56:46.971548 [debug] [Thread-2 (]: Timing info for test.assignment_dbt.not_null_stg_table_a_city.c13a77747f (execute): 04:56:46.921369 => 04:56:46.971388
+[0m04:56:46.972826 [info ] [Thread-3 (]: 3 of 8 PASS not_null_stg_table_a_name .......................................... [[32mPASS[0m in 0.11s]
+[0m04:56:46.974333 [debug] [Thread-1 (]: Finished running node test.assignment_dbt.not_null_stg_table_a_age.91cd833ec3
+[0m04:56:46.975830 [debug] [Thread-4 (]: Timing info for test.assignment_dbt.not_null_table_b_age.286df43aec (execute): 04:56:46.923743 => 04:56:46.975680
+[0m04:56:46.976707 [debug] [Thread-2 (]: On test.assignment_dbt.not_null_stg_table_a_city.c13a77747f: ROLLBACK
+[0m04:56:46.977656 [debug] [Thread-3 (]: Finished running node test.assignment_dbt.not_null_stg_table_a_name.98883deb57
+[0m04:56:46.978545 [debug] [Thread-1 (]: Began running node test.assignment_dbt.not_null_table_b_category.f8e4965633
+[0m04:56:46.979499 [debug] [Thread-4 (]: On test.assignment_dbt.not_null_table_b_age.286df43aec: ROLLBACK
+[0m04:56:46.980528 [debug] [Thread-2 (]: On test.assignment_dbt.not_null_stg_table_a_city.c13a77747f: Close
+[0m04:56:46.981210 [debug] [Thread-3 (]: Began running node test.assignment_dbt.not_null_table_b_city.6bd702bd47
+[0m04:56:46.982148 [info ] [Thread-1 (]: 5 of 8 START test not_null_table_b_category .................................... [RUN]
+[0m04:56:46.983401 [debug] [Thread-4 (]: On test.assignment_dbt.not_null_table_b_age.286df43aec: Close
+[0m04:56:46.984355 [info ] [Thread-2 (]: 2 of 8 PASS not_null_stg_table_a_city .......................................... [[32mPASS[0m in 0.13s]
+[0m04:56:46.985175 [info ] [Thread-3 (]: 6 of 8 START test not_null_table_b_city ........................................ [RUN]
+[0m04:56:46.986458 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.assignment_dbt.not_null_stg_table_a_age.91cd833ec3, now test.assignment_dbt.not_null_table_b_category.f8e4965633)
+[0m04:56:46.987726 [info ] [Thread-4 (]: 4 of 8 PASS not_null_table_b_age ............................................... [[32mPASS[0m in 0.13s]
+[0m04:56:46.988503 [debug] [Thread-2 (]: Finished running node test.assignment_dbt.not_null_stg_table_a_city.c13a77747f
+[0m04:56:46.989622 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.assignment_dbt.not_null_stg_table_a_name.98883deb57, now test.assignment_dbt.not_null_table_b_city.6bd702bd47)
+[0m04:56:46.990453 [debug] [Thread-1 (]: Began compiling node test.assignment_dbt.not_null_table_b_category.f8e4965633
+[0m04:56:46.991294 [debug] [Thread-4 (]: Finished running node test.assignment_dbt.not_null_table_b_age.286df43aec
+[0m04:56:46.992392 [debug] [Thread-2 (]: Began running node test.assignment_dbt.not_null_table_b_name.e305c8ae87
+[0m04:56:46.993072 [debug] [Thread-3 (]: Began compiling node test.assignment_dbt.not_null_table_b_city.6bd702bd47
+[0m04:56:46.996325 [debug] [Thread-1 (]: Writing injected SQL for node "test.assignment_dbt.not_null_table_b_category.f8e4965633"
+[0m04:56:46.997353 [debug] [Thread-4 (]: Began running node test.assignment_dbt.unique_table_b__name_age_text_city_.e60e45c487
+[0m04:56:46.998229 [info ] [Thread-2 (]: 7 of 8 START test not_null_table_b_name ........................................ [RUN]
+[0m04:56:47.001024 [debug] [Thread-3 (]: Writing injected SQL for node "test.assignment_dbt.not_null_table_b_city.6bd702bd47"
+[0m04:56:47.002546 [info ] [Thread-4 (]: 8 of 8 START test unique_table_b__name_age_text_city_ .......................... [RUN]
+[0m04:56:47.003651 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.assignment_dbt.not_null_stg_table_a_city.c13a77747f, now test.assignment_dbt.not_null_table_b_name.e305c8ae87)
+[0m04:56:47.004881 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.assignment_dbt.not_null_table_b_age.286df43aec, now test.assignment_dbt.unique_table_b__name_age_text_city_.e60e45c487)
+[0m04:56:47.005647 [debug] [Thread-2 (]: Began compiling node test.assignment_dbt.not_null_table_b_name.e305c8ae87
+[0m04:56:47.006437 [debug] [Thread-4 (]: Began compiling node test.assignment_dbt.unique_table_b__name_age_text_city_.e60e45c487
+[0m04:56:47.007932 [debug] [Thread-1 (]: Timing info for test.assignment_dbt.not_null_table_b_category.f8e4965633 (compile): 04:56:46.993594 => 04:56:47.007788
+[0m04:56:47.010771 [debug] [Thread-2 (]: Writing injected SQL for node "test.assignment_dbt.not_null_table_b_name.e305c8ae87"
+[0m04:56:47.015206 [debug] [Thread-4 (]: Writing injected SQL for node "test.assignment_dbt.unique_table_b__name_age_text_city_.e60e45c487"
+[0m04:56:47.015563 [debug] [Thread-3 (]: Timing info for test.assignment_dbt.not_null_table_b_city.6bd702bd47 (compile): 04:56:46.998876 => 04:56:47.015432
+[0m04:56:47.016238 [debug] [Thread-1 (]: Began executing node test.assignment_dbt.not_null_table_b_category.f8e4965633
+[0m04:56:47.019659 [debug] [Thread-3 (]: Began executing node test.assignment_dbt.not_null_table_b_city.6bd702bd47
+[0m04:56:47.022574 [debug] [Thread-1 (]: Writing runtime sql for node "test.assignment_dbt.not_null_table_b_category.f8e4965633"
+[0m04:56:47.024804 [debug] [Thread-3 (]: Writing runtime sql for node "test.assignment_dbt.not_null_table_b_city.6bd702bd47"
+[0m04:56:47.026674 [debug] [Thread-2 (]: Timing info for test.assignment_dbt.not_null_table_b_name.e305c8ae87 (compile): 04:56:47.008066 => 04:56:47.026503
+[0m04:56:47.028238 [debug] [Thread-2 (]: Began executing node test.assignment_dbt.not_null_table_b_name.e305c8ae87
+[0m04:56:47.029164 [debug] [Thread-4 (]: Timing info for test.assignment_dbt.unique_table_b__name_age_text_city_.e60e45c487 (compile): 04:56:47.011637 => 04:56:47.029022
+[0m04:56:47.032167 [debug] [Thread-2 (]: Writing runtime sql for node "test.assignment_dbt.not_null_table_b_name.e305c8ae87"
+[0m04:56:47.034663 [debug] [Thread-4 (]: Began executing node test.assignment_dbt.unique_table_b__name_age_text_city_.e60e45c487
+[0m04:56:47.035113 [debug] [Thread-3 (]: Using postgres connection "test.assignment_dbt.not_null_table_b_city.6bd702bd47"
+[0m04:56:47.038821 [debug] [Thread-4 (]: Writing runtime sql for node "test.assignment_dbt.unique_table_b__name_age_text_city_.e60e45c487"
+[0m04:56:47.039197 [debug] [Thread-1 (]: Using postgres connection "test.assignment_dbt.not_null_table_b_category.f8e4965633"
+[0m04:56:47.040466 [debug] [Thread-3 (]: On test.assignment_dbt.not_null_table_b_city.6bd702bd47: BEGIN
+[0m04:56:47.042477 [debug] [Thread-2 (]: Using postgres connection "test.assignment_dbt.not_null_table_b_name.e305c8ae87"
+[0m04:56:47.043699 [debug] [Thread-1 (]: On test.assignment_dbt.not_null_table_b_category.f8e4965633: BEGIN
+[0m04:56:47.046465 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m04:56:47.048367 [debug] [Thread-2 (]: On test.assignment_dbt.not_null_table_b_name.e305c8ae87: BEGIN
+[0m04:56:47.049533 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m04:56:47.051684 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m04:56:47.054842 [debug] [Thread-3 (]: SQL status: BEGIN in 0.0 seconds
+[0m04:56:47.056261 [debug] [Thread-1 (]: SQL status: BEGIN in 0.0 seconds
+[0m04:56:47.057045 [debug] [Thread-2 (]: SQL status: BEGIN in 0.0 seconds
+[0m04:56:47.057361 [debug] [Thread-4 (]: Using postgres connection "test.assignment_dbt.unique_table_b__name_age_text_city_.e60e45c487"
+[0m04:56:47.058180 [debug] [Thread-3 (]: Using postgres connection "test.assignment_dbt.not_null_table_b_city.6bd702bd47"
+[0m04:56:47.059247 [debug] [Thread-1 (]: Using postgres connection "test.assignment_dbt.not_null_table_b_category.f8e4965633"
+[0m04:56:47.060122 [debug] [Thread-2 (]: Using postgres connection "test.assignment_dbt.not_null_table_b_name.e305c8ae87"
+[0m04:56:47.060984 [debug] [Thread-4 (]: On test.assignment_dbt.unique_table_b__name_age_text_city_.e60e45c487: BEGIN
+[0m04:56:47.061835 [debug] [Thread-3 (]: On test.assignment_dbt.not_null_table_b_city.6bd702bd47: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "assignment", "target_name": "dev", "node_id": "test.assignment_dbt.not_null_table_b_city.6bd702bd47"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select city
+from "testdb"."public"."table_b"
+where city is null
+
+
+
+      
+    ) dbt_internal_test
+[0m04:56:47.062718 [debug] [Thread-1 (]: On test.assignment_dbt.not_null_table_b_category.f8e4965633: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "assignment", "target_name": "dev", "node_id": "test.assignment_dbt.not_null_table_b_category.f8e4965633"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select category
+from "testdb"."public"."table_b"
+where category is null
+
+
+
+      
+    ) dbt_internal_test
+[0m04:56:47.063602 [debug] [Thread-2 (]: On test.assignment_dbt.not_null_table_b_name.e305c8ae87: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "assignment", "target_name": "dev", "node_id": "test.assignment_dbt.not_null_table_b_name.e305c8ae87"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select name
+from "testdb"."public"."table_b"
+where name is null
+
+
+
+      
+    ) dbt_internal_test
+[0m04:56:47.064429 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m04:56:47.066001 [debug] [Thread-3 (]: SQL status: SELECT 1 in 0.0 seconds
+[0m04:56:47.066734 [debug] [Thread-1 (]: SQL status: SELECT 1 in 0.0 seconds
+[0m04:56:47.068471 [debug] [Thread-2 (]: SQL status: SELECT 1 in 0.0 seconds
+[0m04:56:47.070394 [debug] [Thread-3 (]: Timing info for test.assignment_dbt.not_null_table_b_city.6bd702bd47 (execute): 04:56:47.023551 => 04:56:47.070264
+[0m04:56:47.071891 [debug] [Thread-1 (]: Timing info for test.assignment_dbt.not_null_table_b_category.f8e4965633 (execute): 04:56:47.021244 => 04:56:47.071772
+[0m04:56:47.072719 [debug] [Thread-4 (]: SQL status: BEGIN in 0.0 seconds
+[0m04:56:47.073753 [debug] [Thread-2 (]: Timing info for test.assignment_dbt.not_null_table_b_name.e305c8ae87 (execute): 04:56:47.029910 => 04:56:47.073615
+[0m04:56:47.074541 [debug] [Thread-3 (]: On test.assignment_dbt.not_null_table_b_city.6bd702bd47: ROLLBACK
+[0m04:56:47.075440 [debug] [Thread-1 (]: On test.assignment_dbt.not_null_table_b_category.f8e4965633: ROLLBACK
+[0m04:56:47.076270 [debug] [Thread-4 (]: Using postgres connection "test.assignment_dbt.unique_table_b__name_age_text_city_.e60e45c487"
+[0m04:56:47.077068 [debug] [Thread-2 (]: On test.assignment_dbt.not_null_table_b_name.e305c8ae87: ROLLBACK
+[0m04:56:47.077982 [debug] [Thread-3 (]: On test.assignment_dbt.not_null_table_b_city.6bd702bd47: Close
+[0m04:56:47.078603 [debug] [Thread-1 (]: On test.assignment_dbt.not_null_table_b_category.f8e4965633: Close
+[0m04:56:47.079172 [debug] [Thread-4 (]: On test.assignment_dbt.unique_table_b__name_age_text_city_.e60e45c487: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "assignment", "target_name": "dev", "node_id": "test.assignment_dbt.unique_table_b__name_age_text_city_.e60e45c487"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+select
+    (name || '|' || age::text || '|' || city) as unique_field,
+    count(*) as n_records
+
+from "testdb"."public"."table_b"
+where (name || '|' || age::text || '|' || city) is not null
+group by (name || '|' || age::text || '|' || city)
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m04:56:47.080100 [debug] [Thread-2 (]: On test.assignment_dbt.not_null_table_b_name.e305c8ae87: Close
+[0m04:56:47.080958 [info ] [Thread-3 (]: 6 of 8 PASS not_null_table_b_city .............................................. [[32mPASS[0m in 0.09s]
+[0m04:56:47.082014 [info ] [Thread-1 (]: 5 of 8 PASS not_null_table_b_category .......................................... [[32mPASS[0m in 0.10s]
+[0m04:56:47.084229 [debug] [Thread-4 (]: SQL status: SELECT 1 in 0.0 seconds
+[0m04:56:47.083908 [info ] [Thread-2 (]: 7 of 8 PASS not_null_table_b_name .............................................. [[32mPASS[0m in 0.08s]
+[0m04:56:47.084856 [debug] [Thread-3 (]: Finished running node test.assignment_dbt.not_null_table_b_city.6bd702bd47
+[0m04:56:47.085705 [debug] [Thread-1 (]: Finished running node test.assignment_dbt.not_null_table_b_category.f8e4965633
+[0m04:56:47.087037 [debug] [Thread-4 (]: Timing info for test.assignment_dbt.unique_table_b__name_age_text_city_.e60e45c487 (execute): 04:56:47.037628 => 04:56:47.086906
+[0m04:56:47.087763 [debug] [Thread-2 (]: Finished running node test.assignment_dbt.not_null_table_b_name.e305c8ae87
+[0m04:56:47.089931 [debug] [Thread-4 (]: On test.assignment_dbt.unique_table_b__name_age_text_city_.e60e45c487: ROLLBACK
+[0m04:56:47.091295 [debug] [Thread-4 (]: On test.assignment_dbt.unique_table_b__name_age_text_city_.e60e45c487: Close
+[0m04:56:47.092289 [info ] [Thread-4 (]: 8 of 8 PASS unique_table_b__name_age_text_city_ ................................ [[32mPASS[0m in 0.09s]
+[0m04:56:47.093476 [debug] [Thread-4 (]: Finished running node test.assignment_dbt.unique_table_b__name_age_text_city_.e60e45c487
+[0m04:56:47.095783 [debug] [MainThread]: Using postgres connection "master"
+[0m04:56:47.096757 [debug] [MainThread]: On master: BEGIN
+[0m04:56:47.097580 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m04:56:47.101987 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m04:56:47.102725 [debug] [MainThread]: On master: COMMIT
+[0m04:56:47.103344 [debug] [MainThread]: Using postgres connection "master"
+[0m04:56:47.103946 [debug] [MainThread]: On master: COMMIT
+[0m04:56:47.104621 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m04:56:47.105301 [debug] [MainThread]: On master: Close
+[0m04:56:47.106222 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m04:56:47.106833 [debug] [MainThread]: Connection 'test.assignment_dbt.not_null_table_b_category.f8e4965633' was properly closed.
+[0m04:56:47.107298 [debug] [MainThread]: Connection 'test.assignment_dbt.not_null_table_b_name.e305c8ae87' was properly closed.
+[0m04:56:47.107810 [debug] [MainThread]: Connection 'test.assignment_dbt.not_null_table_b_city.6bd702bd47' was properly closed.
+[0m04:56:47.108381 [debug] [MainThread]: Connection 'test.assignment_dbt.unique_table_b__name_age_text_city_.e60e45c487' was properly closed.
+[0m04:56:47.109121 [info ] [MainThread]: 
+[0m04:56:47.109916 [info ] [MainThread]: Finished running 8 tests in 0 hours 0 minutes and 0.32 seconds (0.32s).
+[0m04:56:47.111134 [debug] [MainThread]: Command end result
+[0m04:56:47.125428 [info ] [MainThread]: 
+[0m04:56:47.126645 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m04:56:47.127879 [info ] [MainThread]: 
+[0m04:56:47.129468 [info ] [MainThread]: Done. PASS=8 WARN=0 ERROR=0 SKIP=0 TOTAL=8
+[0m04:56:47.131341 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": true, "command_wall_clock_time": 0.6608767, "process_user_time": 1.240357, "process_kernel_time": 0.157505, "process_mem_max_rss": "119992", "process_out_blocks": "1968", "process_in_blocks": "0"}
+[0m04:56:47.133108 [debug] [MainThread]: Command `dbt test` succeeded at 04:56:47.133028 after 0.66 seconds
+[0m04:56:47.134210 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x702185204510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7021897d4a50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7021897d4a10>]}
+[0m04:56:47.135551 [debug] [MainThread]: Flushing usage events
+[0m04:57:21.367629 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x78559aa8add0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x78559aa8b0d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x78559aa8a1d0>]}
+
+
+============================== 04:57:21.371638 | 11255860-6167-4b5c-a882-d43038281c93 ==============================
+[0m04:57:21.371638 [info ] [MainThread]: Running with dbt=1.7.18
+[0m04:57:21.373193 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/.dbt', 'version_check': 'True', 'debug': 'False', 'log_path': '/project/logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt build --project-dir /project --profiles-dir /.dbt', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m04:57:21.457283 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '11255860-6167-4b5c-a882-d43038281c93', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x78559aa13e90>]}
+[0m04:57:21.491842 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '11255860-6167-4b5c-a882-d43038281c93', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x78559aa13e90>]}
+[0m04:57:21.494035 [info ] [MainThread]: Registered adapter: postgres=1.7.18
+[0m04:57:21.500756 [debug] [MainThread]: checksum: 7ef98830ab3f0215d011ffa635e2417c6313d5b77f40f33d534bad4eb8784f08, vars: {}, profile: , target: , version: 1.7.18
+[0m04:57:21.583648 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m04:57:21.584766 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m04:57:21.588892 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '11255860-6167-4b5c-a882-d43038281c93', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7855999c1d90>]}
+[0m04:57:21.623010 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '11255860-6167-4b5c-a882-d43038281c93', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x78559aa8a1d0>]}
+[0m04:57:21.630047 [info ] [MainThread]: Found 2 models, 1 seed, 8 tests, 1 source, 0 exposures, 0 metrics, 401 macros, 0 groups, 0 semantic models
+[0m04:57:21.633500 [info ] [MainThread]: 
+[0m04:57:21.635130 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m04:57:21.640850 [debug] [ThreadPool]: Acquiring new postgres connection 'list_testdb'
+[0m04:57:21.649524 [debug] [ThreadPool]: Using postgres connection "list_testdb"
+[0m04:57:21.650397 [debug] [ThreadPool]: On list_testdb: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "assignment", "target_name": "dev", "connection_name": "list_testdb"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m04:57:21.651227 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m04:57:21.657671 [debug] [ThreadPool]: SQL status: SELECT 4 in 0.0 seconds
+[0m04:57:21.659277 [debug] [ThreadPool]: On list_testdb: Close
+[0m04:57:21.660990 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_testdb, now list_testdb_public)
+[0m04:57:21.664514 [debug] [ThreadPool]: Using postgres connection "list_testdb_public"
+[0m04:57:21.665275 [debug] [ThreadPool]: On list_testdb_public: BEGIN
+[0m04:57:21.665932 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m04:57:21.670156 [debug] [ThreadPool]: SQL status: BEGIN in 0.0 seconds
+[0m04:57:21.671038 [debug] [ThreadPool]: Using postgres connection "list_testdb_public"
+[0m04:57:21.671920 [debug] [ThreadPool]: On list_testdb_public: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "assignment", "target_name": "dev", "connection_name": "list_testdb_public"} */
+select
+      'testdb' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public'
+    union all
+    select
+      'testdb' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public'
+    union all
+    select
+      'testdb' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'public'
+  
+[0m04:57:21.674353 [debug] [ThreadPool]: SQL status: SELECT 3 in 0.0 seconds
+[0m04:57:21.675608 [debug] [ThreadPool]: On list_testdb_public: ROLLBACK
+[0m04:57:21.676480 [debug] [ThreadPool]: On list_testdb_public: Close
+[0m04:57:21.680066 [debug] [MainThread]: Using postgres connection "master"
+[0m04:57:21.680901 [debug] [MainThread]: On master: BEGIN
+[0m04:57:21.681629 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m04:57:21.685716 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m04:57:21.686458 [debug] [MainThread]: Using postgres connection "master"
+[0m04:57:21.687166 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "assignment", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m04:57:21.689941 [debug] [MainThread]: SQL status: SELECT 1 in 0.0 seconds
+[0m04:57:21.691251 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '11255860-6167-4b5c-a882-d43038281c93', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x78559aa89a90>]}
+[0m04:57:21.692004 [debug] [MainThread]: On master: ROLLBACK
+[0m04:57:21.692724 [debug] [MainThread]: Using postgres connection "master"
+[0m04:57:21.693367 [debug] [MainThread]: On master: BEGIN
+[0m04:57:21.694188 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m04:57:21.694865 [debug] [MainThread]: On master: COMMIT
+[0m04:57:21.695438 [debug] [MainThread]: Using postgres connection "master"
+[0m04:57:21.696031 [debug] [MainThread]: On master: COMMIT
+[0m04:57:21.696696 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m04:57:21.697317 [debug] [MainThread]: On master: Close
+[0m04:57:21.698126 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m04:57:21.699137 [info ] [MainThread]: 
+[0m04:57:21.705405 [debug] [Thread-1 (]: Began running node model.assignment_dbt.stg_table_a
+[0m04:57:21.705722 [debug] [Thread-2 (]: Began running node seed.assignment_dbt.table_a
+[0m04:57:21.706666 [info ] [Thread-1 (]: 1 of 11 START sql view model public.stg_table_a ................................ [RUN]
+[0m04:57:21.707770 [info ] [Thread-2 (]: 2 of 11 START seed file public.table_a ......................................... [RUN]
+[0m04:57:21.709041 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_testdb_public, now model.assignment_dbt.stg_table_a)
+[0m04:57:21.710417 [debug] [Thread-2 (]: Acquiring new postgres connection 'seed.assignment_dbt.table_a'
+[0m04:57:21.711255 [debug] [Thread-1 (]: Began compiling node model.assignment_dbt.stg_table_a
+[0m04:57:21.711920 [debug] [Thread-2 (]: Began compiling node seed.assignment_dbt.table_a
+[0m04:57:21.716842 [debug] [Thread-1 (]: Writing injected SQL for node "model.assignment_dbt.stg_table_a"
+[0m04:57:21.717775 [debug] [Thread-2 (]: Timing info for seed.assignment_dbt.table_a (compile): 04:57:21.717637 => 04:57:21.717640
+[0m04:57:21.719966 [debug] [Thread-2 (]: Began executing node seed.assignment_dbt.table_a
+[0m04:57:21.731429 [debug] [Thread-1 (]: Timing info for model.assignment_dbt.stg_table_a (compile): 04:57:21.712556 => 04:57:21.731264
+[0m04:57:21.732438 [debug] [Thread-1 (]: Began executing node model.assignment_dbt.stg_table_a
+[0m04:57:21.751707 [debug] [Thread-2 (]: Using postgres connection "seed.assignment_dbt.table_a"
+[0m04:57:21.757764 [debug] [Thread-1 (]: Writing runtime sql for node "model.assignment_dbt.stg_table_a"
+[0m04:57:21.758174 [debug] [Thread-2 (]: On seed.assignment_dbt.table_a: BEGIN
+[0m04:57:21.759687 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m04:57:21.764269 [debug] [Thread-2 (]: SQL status: BEGIN in 0.0 seconds
+[0m04:57:21.765291 [debug] [Thread-1 (]: Using postgres connection "model.assignment_dbt.stg_table_a"
+[0m04:57:21.765522 [debug] [Thread-2 (]: Using postgres connection "seed.assignment_dbt.table_a"
+[0m04:57:21.766353 [debug] [Thread-1 (]: On model.assignment_dbt.stg_table_a: BEGIN
+[0m04:57:21.767015 [debug] [Thread-2 (]: On seed.assignment_dbt.table_a: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "assignment", "target_name": "dev", "node_id": "seed.assignment_dbt.table_a"} */
+truncate table "testdb"."public"."table_a"
+[0m04:57:21.767596 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m04:57:21.772771 [debug] [Thread-1 (]: SQL status: BEGIN in 0.0 seconds
+[0m04:57:21.774183 [debug] [Thread-1 (]: Using postgres connection "model.assignment_dbt.stg_table_a"
+[0m04:57:21.774941 [debug] [Thread-1 (]: On model.assignment_dbt.stg_table_a: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "assignment", "target_name": "dev", "node_id": "model.assignment_dbt.stg_table_a"} */
+
+  create view "testdb"."public"."stg_table_a__dbt_tmp"
+    
+    
+  as (
+    
+
+select
+  name,
+  age,
+  city
+from "testdb"."public"."table_a"
+  );
+[0m04:57:21.776679 [debug] [Thread-2 (]: SQL status: TRUNCATE TABLE in 0.0 seconds
+[0m04:57:21.786275 [debug] [Thread-2 (]: Using postgres connection "seed.assignment_dbt.table_a"
+[0m04:57:21.787403 [debug] [Thread-2 (]: On seed.assignment_dbt.table_a: 
+          insert into "testdb"."public"."table_a" ("name", "age", "city") values
+          (%s,%s,%s),(%s,%s,%s),(%s,%s,%s)
+      ...
+[0m04:57:21.788811 [debug] [Thread-2 (]: SQL status: INSERT 0 3 in 0.0 seconds
+[0m04:57:21.792235 [debug] [Thread-2 (]: Writing runtime SQL for node "seed.assignment_dbt.table_a"
+[0m04:57:21.805335 [debug] [Thread-2 (]: On seed.assignment_dbt.table_a: COMMIT
+[0m04:57:21.806298 [debug] [Thread-2 (]: Using postgres connection "seed.assignment_dbt.table_a"
+[0m04:57:21.807026 [debug] [Thread-2 (]: On seed.assignment_dbt.table_a: COMMIT
+[0m04:57:21.809690 [debug] [Thread-2 (]: SQL status: COMMIT in 0.0 seconds
+[0m04:57:21.810757 [debug] [Thread-2 (]: Timing info for seed.assignment_dbt.table_a (execute): 04:57:21.720673 => 04:57:21.810649
+[0m04:57:21.811035 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.0 seconds
+[0m04:57:21.811776 [debug] [Thread-2 (]: On seed.assignment_dbt.table_a: Close
+[0m04:57:21.815894 [debug] [Thread-1 (]: Using postgres connection "model.assignment_dbt.stg_table_a"
+[0m04:57:21.817109 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '11255860-6167-4b5c-a882-d43038281c93', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7855999c8cd0>]}
+[0m04:57:21.817671 [debug] [Thread-1 (]: On model.assignment_dbt.stg_table_a: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "assignment", "target_name": "dev", "node_id": "model.assignment_dbt.stg_table_a"} */
+alter table "testdb"."public"."stg_table_a" rename to "stg_table_a__dbt_backup"
+[0m04:57:21.818483 [info ] [Thread-2 (]: 2 of 11 OK loaded seed file public.table_a ..................................... [[32mINSERT 3[0m in 0.11s]
+[0m04:57:21.819706 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m04:57:21.820460 [debug] [Thread-2 (]: Finished running node seed.assignment_dbt.table_a
+[0m04:57:21.822889 [debug] [Thread-1 (]: Using postgres connection "model.assignment_dbt.stg_table_a"
+[0m04:57:21.824230 [debug] [Thread-1 (]: On model.assignment_dbt.stg_table_a: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "assignment", "target_name": "dev", "node_id": "model.assignment_dbt.stg_table_a"} */
+alter table "testdb"."public"."stg_table_a__dbt_tmp" rename to "stg_table_a"
+[0m04:57:21.825106 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m04:57:21.827917 [debug] [Thread-1 (]: On model.assignment_dbt.stg_table_a: COMMIT
+[0m04:57:21.828785 [debug] [Thread-1 (]: Using postgres connection "model.assignment_dbt.stg_table_a"
+[0m04:57:21.829453 [debug] [Thread-1 (]: On model.assignment_dbt.stg_table_a: COMMIT
+[0m04:57:21.831016 [debug] [Thread-1 (]: SQL status: COMMIT in 0.0 seconds
+[0m04:57:21.835166 [debug] [Thread-1 (]: Applying DROP to: "testdb"."public"."stg_table_a__dbt_backup"
+[0m04:57:21.839378 [debug] [Thread-1 (]: Using postgres connection "model.assignment_dbt.stg_table_a"
+[0m04:57:21.840236 [debug] [Thread-1 (]: On model.assignment_dbt.stg_table_a: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "assignment", "target_name": "dev", "node_id": "model.assignment_dbt.stg_table_a"} */
+drop view if exists "testdb"."public"."stg_table_a__dbt_backup" cascade
+[0m04:57:21.842013 [debug] [Thread-1 (]: SQL status: DROP VIEW in 0.0 seconds
+[0m04:57:21.844046 [debug] [Thread-1 (]: Timing info for model.assignment_dbt.stg_table_a (execute): 04:57:21.734724 => 04:57:21.843933
+[0m04:57:21.845108 [debug] [Thread-1 (]: On model.assignment_dbt.stg_table_a: Close
+[0m04:57:21.846567 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '11255860-6167-4b5c-a882-d43038281c93', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x785599de9fd0>]}
+[0m04:57:21.847699 [info ] [Thread-1 (]: 1 of 11 OK created sql view model public.stg_table_a ........................... [[32mCREATE VIEW[0m in 0.14s]
+[0m04:57:21.848742 [debug] [Thread-1 (]: Finished running node model.assignment_dbt.stg_table_a
+[0m04:57:21.850389 [debug] [Thread-4 (]: Began running node test.assignment_dbt.not_null_stg_table_a_age.91cd833ec3
+[0m04:57:21.850901 [debug] [Thread-3 (]: Began running node test.assignment_dbt.not_null_stg_table_a_city.c13a77747f
+[0m04:57:21.851165 [debug] [Thread-2 (]: Began running node test.assignment_dbt.not_null_stg_table_a_name.98883deb57
+[0m04:57:21.851829 [info ] [Thread-4 (]: 3 of 11 START test not_null_stg_table_a_age .................................... [RUN]
+[0m04:57:21.853297 [info ] [Thread-3 (]: 4 of 11 START test not_null_stg_table_a_city ................................... [RUN]
+[0m04:57:21.854561 [info ] [Thread-2 (]: 5 of 11 START test not_null_stg_table_a_name ................................... [RUN]
+[0m04:57:21.856026 [debug] [Thread-4 (]: Acquiring new postgres connection 'test.assignment_dbt.not_null_stg_table_a_age.91cd833ec3'
+[0m04:57:21.857503 [debug] [Thread-3 (]: Acquiring new postgres connection 'test.assignment_dbt.not_null_stg_table_a_city.c13a77747f'
+[0m04:57:21.858903 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly seed.assignment_dbt.table_a, now test.assignment_dbt.not_null_stg_table_a_name.98883deb57)
+[0m04:57:21.860056 [debug] [Thread-4 (]: Began compiling node test.assignment_dbt.not_null_stg_table_a_age.91cd833ec3
+[0m04:57:21.861101 [debug] [Thread-3 (]: Began compiling node test.assignment_dbt.not_null_stg_table_a_city.c13a77747f
+[0m04:57:21.861908 [debug] [Thread-2 (]: Began compiling node test.assignment_dbt.not_null_stg_table_a_name.98883deb57
+[0m04:57:21.869718 [debug] [Thread-4 (]: Writing injected SQL for node "test.assignment_dbt.not_null_stg_table_a_age.91cd833ec3"
+[0m04:57:21.872770 [debug] [Thread-3 (]: Writing injected SQL for node "test.assignment_dbt.not_null_stg_table_a_city.c13a77747f"
+[0m04:57:21.876495 [debug] [Thread-2 (]: Writing injected SQL for node "test.assignment_dbt.not_null_stg_table_a_name.98883deb57"
+[0m04:57:21.884290 [debug] [Thread-3 (]: Timing info for test.assignment_dbt.not_null_stg_table_a_city.c13a77747f (compile): 04:57:21.870602 => 04:57:21.883982
+[0m04:57:21.884678 [debug] [Thread-2 (]: Timing info for test.assignment_dbt.not_null_stg_table_a_name.98883deb57 (compile): 04:57:21.874292 => 04:57:21.884511
+[0m04:57:21.885501 [debug] [Thread-3 (]: Began executing node test.assignment_dbt.not_null_stg_table_a_city.c13a77747f
+[0m04:57:21.885770 [debug] [Thread-4 (]: Timing info for test.assignment_dbt.not_null_stg_table_a_age.91cd833ec3 (compile): 04:57:21.862695 => 04:57:21.885642
+[0m04:57:21.886319 [debug] [Thread-2 (]: Began executing node test.assignment_dbt.not_null_stg_table_a_name.98883deb57
+[0m04:57:21.895427 [debug] [Thread-3 (]: Writing runtime sql for node "test.assignment_dbt.not_null_stg_table_a_city.c13a77747f"
+[0m04:57:21.896107 [debug] [Thread-4 (]: Began executing node test.assignment_dbt.not_null_stg_table_a_age.91cd833ec3
+[0m04:57:21.898070 [debug] [Thread-2 (]: Writing runtime sql for node "test.assignment_dbt.not_null_stg_table_a_name.98883deb57"
+[0m04:57:21.900639 [debug] [Thread-4 (]: Writing runtime sql for node "test.assignment_dbt.not_null_stg_table_a_age.91cd833ec3"
+[0m04:57:21.905791 [debug] [Thread-3 (]: Using postgres connection "test.assignment_dbt.not_null_stg_table_a_city.c13a77747f"
+[0m04:57:21.906076 [debug] [Thread-4 (]: Using postgres connection "test.assignment_dbt.not_null_stg_table_a_age.91cd833ec3"
+[0m04:57:21.906871 [debug] [Thread-3 (]: On test.assignment_dbt.not_null_stg_table_a_city.c13a77747f: BEGIN
+[0m04:57:21.907820 [debug] [Thread-4 (]: On test.assignment_dbt.not_null_stg_table_a_age.91cd833ec3: BEGIN
+[0m04:57:21.908036 [debug] [Thread-2 (]: Using postgres connection "test.assignment_dbt.not_null_stg_table_a_name.98883deb57"
+[0m04:57:21.908692 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m04:57:21.909604 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m04:57:21.910472 [debug] [Thread-2 (]: On test.assignment_dbt.not_null_stg_table_a_name.98883deb57: BEGIN
+[0m04:57:21.913000 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m04:57:21.915502 [debug] [Thread-3 (]: SQL status: BEGIN in 0.0 seconds
+[0m04:57:21.915729 [debug] [Thread-4 (]: SQL status: BEGIN in 0.0 seconds
+[0m04:57:21.916496 [debug] [Thread-3 (]: Using postgres connection "test.assignment_dbt.not_null_stg_table_a_city.c13a77747f"
+[0m04:57:21.917136 [debug] [Thread-2 (]: SQL status: BEGIN in 0.0 seconds
+[0m04:57:21.917468 [debug] [Thread-4 (]: Using postgres connection "test.assignment_dbt.not_null_stg_table_a_age.91cd833ec3"
+[0m04:57:21.918350 [debug] [Thread-3 (]: On test.assignment_dbt.not_null_stg_table_a_city.c13a77747f: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "assignment", "target_name": "dev", "node_id": "test.assignment_dbt.not_null_stg_table_a_city.c13a77747f"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select city
+from "testdb"."public"."stg_table_a"
+where city is null
+
+
+
+      
+    ) dbt_internal_test
+[0m04:57:21.919208 [debug] [Thread-2 (]: Using postgres connection "test.assignment_dbt.not_null_stg_table_a_name.98883deb57"
+[0m04:57:21.919992 [debug] [Thread-4 (]: On test.assignment_dbt.not_null_stg_table_a_age.91cd833ec3: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "assignment", "target_name": "dev", "node_id": "test.assignment_dbt.not_null_stg_table_a_age.91cd833ec3"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select age
+from "testdb"."public"."stg_table_a"
+where age is null
+
+
+
+      
+    ) dbt_internal_test
+[0m04:57:21.921858 [debug] [Thread-2 (]: On test.assignment_dbt.not_null_stg_table_a_name.98883deb57: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "assignment", "target_name": "dev", "node_id": "test.assignment_dbt.not_null_stg_table_a_name.98883deb57"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select name
+from "testdb"."public"."stg_table_a"
+where name is null
+
+
+
+      
+    ) dbt_internal_test
+[0m04:57:21.922097 [debug] [Thread-3 (]: SQL status: SELECT 1 in 0.0 seconds
+[0m04:57:21.923660 [debug] [Thread-4 (]: SQL status: SELECT 1 in 0.0 seconds
+[0m04:57:21.924539 [debug] [Thread-2 (]: SQL status: SELECT 1 in 0.0 seconds
+[0m04:57:21.925758 [debug] [Thread-3 (]: Timing info for test.assignment_dbt.not_null_stg_table_a_city.c13a77747f (execute): 04:57:21.887185 => 04:57:21.925619
+[0m04:57:21.927265 [debug] [Thread-4 (]: Timing info for test.assignment_dbt.not_null_stg_table_a_age.91cd833ec3 (execute): 04:57:21.899578 => 04:57:21.927128
+[0m04:57:21.928717 [debug] [Thread-2 (]: Timing info for test.assignment_dbt.not_null_stg_table_a_name.98883deb57 (execute): 04:57:21.897056 => 04:57:21.928597
+[0m04:57:21.929630 [debug] [Thread-3 (]: On test.assignment_dbt.not_null_stg_table_a_city.c13a77747f: ROLLBACK
+[0m04:57:21.930501 [debug] [Thread-4 (]: On test.assignment_dbt.not_null_stg_table_a_age.91cd833ec3: ROLLBACK
+[0m04:57:21.931326 [debug] [Thread-2 (]: On test.assignment_dbt.not_null_stg_table_a_name.98883deb57: ROLLBACK
+[0m04:57:21.932343 [debug] [Thread-3 (]: On test.assignment_dbt.not_null_stg_table_a_city.c13a77747f: Close
+[0m04:57:21.933060 [debug] [Thread-4 (]: On test.assignment_dbt.not_null_stg_table_a_age.91cd833ec3: Close
+[0m04:57:21.933712 [debug] [Thread-2 (]: On test.assignment_dbt.not_null_stg_table_a_name.98883deb57: Close
+[0m04:57:21.934584 [info ] [Thread-3 (]: 4 of 11 PASS not_null_stg_table_a_city ......................................... [[32mPASS[0m in 0.08s]
+[0m04:57:21.935512 [info ] [Thread-4 (]: 3 of 11 PASS not_null_stg_table_a_age .......................................... [[32mPASS[0m in 0.08s]
+[0m04:57:21.936751 [info ] [Thread-2 (]: 5 of 11 PASS not_null_stg_table_a_name ......................................... [[32mPASS[0m in 0.08s]
+[0m04:57:21.937646 [debug] [Thread-3 (]: Finished running node test.assignment_dbt.not_null_stg_table_a_city.c13a77747f
+[0m04:57:21.938730 [debug] [Thread-4 (]: Finished running node test.assignment_dbt.not_null_stg_table_a_age.91cd833ec3
+[0m04:57:21.940001 [debug] [Thread-2 (]: Finished running node test.assignment_dbt.not_null_stg_table_a_name.98883deb57
+[0m04:57:21.942900 [debug] [Thread-1 (]: Began running node model.assignment_dbt.table_b
+[0m04:57:21.943904 [info ] [Thread-1 (]: 6 of 11 START sql table model public.table_b ................................... [RUN]
+[0m04:57:21.945219 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.assignment_dbt.stg_table_a, now model.assignment_dbt.table_b)
+[0m04:57:21.946188 [debug] [Thread-1 (]: Began compiling node model.assignment_dbt.table_b
+[0m04:57:21.949125 [debug] [Thread-1 (]: Writing injected SQL for node "model.assignment_dbt.table_b"
+[0m04:57:21.957487 [debug] [Thread-1 (]: Timing info for model.assignment_dbt.table_b (compile): 04:57:21.946953 => 04:57:21.957272
+[0m04:57:21.958592 [debug] [Thread-1 (]: Began executing node model.assignment_dbt.table_b
+[0m04:57:21.971153 [debug] [Thread-1 (]: Writing runtime sql for node "model.assignment_dbt.table_b"
+[0m04:57:21.980594 [debug] [Thread-1 (]: Using postgres connection "model.assignment_dbt.table_b"
+[0m04:57:21.981401 [debug] [Thread-1 (]: On model.assignment_dbt.table_b: BEGIN
+[0m04:57:21.982098 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m04:57:21.986408 [debug] [Thread-1 (]: SQL status: BEGIN in 0.0 seconds
+[0m04:57:21.987243 [debug] [Thread-1 (]: Using postgres connection "model.assignment_dbt.table_b"
+[0m04:57:21.988037 [debug] [Thread-1 (]: On model.assignment_dbt.table_b: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "assignment", "target_name": "dev", "node_id": "model.assignment_dbt.table_b"} */
+
+  
+    
+
+  create  table "testdb"."public"."table_b__dbt_tmp"
+  
+  
+    as
+  
+  (
+    
+
+with src as (
+  select name, age, city
+  from "testdb"."public"."stg_table_a"
+)
+select
+  name,
+  age,
+  city,
+  case when age < 30 then 'YOUNG' else 'ADULT' end as category
+from src
+  );
+  
+[0m04:57:21.991726 [debug] [Thread-1 (]: SQL status: SELECT 3 in 0.0 seconds
+[0m04:57:21.993981 [debug] [Thread-1 (]: Using postgres connection "model.assignment_dbt.table_b"
+[0m04:57:21.994683 [debug] [Thread-1 (]: On model.assignment_dbt.table_b: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "assignment", "target_name": "dev", "node_id": "model.assignment_dbt.table_b"} */
+alter table "testdb"."public"."table_b" rename to "table_b__dbt_backup"
+[0m04:57:21.995471 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m04:57:21.997500 [debug] [Thread-1 (]: Using postgres connection "model.assignment_dbt.table_b"
+[0m04:57:21.998281 [debug] [Thread-1 (]: On model.assignment_dbt.table_b: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "assignment", "target_name": "dev", "node_id": "model.assignment_dbt.table_b"} */
+alter table "testdb"."public"."table_b__dbt_tmp" rename to "table_b"
+[0m04:57:21.999025 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m04:57:22.002606 [debug] [Thread-1 (]: On model.assignment_dbt.table_b: COMMIT
+[0m04:57:22.003521 [debug] [Thread-1 (]: Using postgres connection "model.assignment_dbt.table_b"
+[0m04:57:22.004410 [debug] [Thread-1 (]: On model.assignment_dbt.table_b: COMMIT
+[0m04:57:22.006031 [debug] [Thread-1 (]: SQL status: COMMIT in 0.0 seconds
+[0m04:57:22.008724 [debug] [Thread-1 (]: Applying DROP to: "testdb"."public"."table_b__dbt_backup"
+[0m04:57:22.011506 [debug] [Thread-1 (]: Using postgres connection "model.assignment_dbt.table_b"
+[0m04:57:22.012523 [debug] [Thread-1 (]: On model.assignment_dbt.table_b: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "assignment", "target_name": "dev", "node_id": "model.assignment_dbt.table_b"} */
+drop table if exists "testdb"."public"."table_b__dbt_backup" cascade
+[0m04:57:22.015264 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.0 seconds
+[0m04:57:22.016934 [debug] [Thread-1 (]: Timing info for model.assignment_dbt.table_b (execute): 04:57:21.959455 => 04:57:22.016830
+[0m04:57:22.018077 [debug] [Thread-1 (]: On model.assignment_dbt.table_b: Close
+[0m04:57:22.019612 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '11255860-6167-4b5c-a882-d43038281c93', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7855999d6f90>]}
+[0m04:57:22.020956 [info ] [Thread-1 (]: 6 of 11 OK created sql table model public.table_b .............................. [[32mSELECT 3[0m in 0.07s]
+[0m04:57:22.022198 [debug] [Thread-1 (]: Finished running node model.assignment_dbt.table_b
+[0m04:57:22.023689 [debug] [Thread-4 (]: Began running node test.assignment_dbt.not_null_table_b_age.286df43aec
+[0m04:57:22.023938 [debug] [Thread-2 (]: Began running node test.assignment_dbt.not_null_table_b_category.f8e4965633
+[0m04:57:22.024186 [debug] [Thread-3 (]: Began running node test.assignment_dbt.not_null_table_b_city.6bd702bd47
+[0m04:57:22.024405 [debug] [Thread-1 (]: Began running node test.assignment_dbt.not_null_table_b_name.e305c8ae87
+[0m04:57:22.025143 [info ] [Thread-4 (]: 7 of 11 START test not_null_table_b_age ........................................ [RUN]
+[0m04:57:22.026158 [info ] [Thread-2 (]: 8 of 11 START test not_null_table_b_category ................................... [RUN]
+[0m04:57:22.027113 [info ] [Thread-3 (]: 9 of 11 START test not_null_table_b_city ....................................... [RUN]
+[0m04:57:22.027988 [info ] [Thread-1 (]: 10 of 11 START test not_null_table_b_name ...................................... [RUN]
+[0m04:57:22.029071 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.assignment_dbt.not_null_stg_table_a_age.91cd833ec3, now test.assignment_dbt.not_null_table_b_age.286df43aec)
+[0m04:57:22.030171 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.assignment_dbt.not_null_stg_table_a_name.98883deb57, now test.assignment_dbt.not_null_table_b_category.f8e4965633)
+[0m04:57:22.031341 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.assignment_dbt.not_null_stg_table_a_city.c13a77747f, now test.assignment_dbt.not_null_table_b_city.6bd702bd47)
+[0m04:57:22.032600 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.assignment_dbt.table_b, now test.assignment_dbt.not_null_table_b_name.e305c8ae87)
+[0m04:57:22.033613 [debug] [Thread-4 (]: Began compiling node test.assignment_dbt.not_null_table_b_age.286df43aec
+[0m04:57:22.034482 [debug] [Thread-2 (]: Began compiling node test.assignment_dbt.not_null_table_b_category.f8e4965633
+[0m04:57:22.035381 [debug] [Thread-3 (]: Began compiling node test.assignment_dbt.not_null_table_b_city.6bd702bd47
+[0m04:57:22.036454 [debug] [Thread-1 (]: Began compiling node test.assignment_dbt.not_null_table_b_name.e305c8ae87
+[0m04:57:22.039907 [debug] [Thread-4 (]: Writing injected SQL for node "test.assignment_dbt.not_null_table_b_age.286df43aec"
+[0m04:57:22.043059 [debug] [Thread-2 (]: Writing injected SQL for node "test.assignment_dbt.not_null_table_b_category.f8e4965633"
+[0m04:57:22.046658 [debug] [Thread-3 (]: Writing injected SQL for node "test.assignment_dbt.not_null_table_b_city.6bd702bd47"
+[0m04:57:22.050801 [debug] [Thread-1 (]: Writing injected SQL for node "test.assignment_dbt.not_null_table_b_name.e305c8ae87"
+[0m04:57:22.058435 [debug] [Thread-4 (]: Timing info for test.assignment_dbt.not_null_table_b_age.286df43aec (compile): 04:57:22.037177 => 04:57:22.058216
+[0m04:57:22.059555 [debug] [Thread-3 (]: Timing info for test.assignment_dbt.not_null_table_b_city.6bd702bd47 (compile): 04:57:22.044485 => 04:57:22.059382
+[0m04:57:22.060243 [debug] [Thread-4 (]: Began executing node test.assignment_dbt.not_null_table_b_age.286df43aec
+[0m04:57:22.060525 [debug] [Thread-2 (]: Timing info for test.assignment_dbt.not_null_table_b_category.f8e4965633 (compile): 04:57:22.041058 => 04:57:22.060408
+[0m04:57:22.061270 [debug] [Thread-3 (]: Began executing node test.assignment_dbt.not_null_table_b_city.6bd702bd47
+[0m04:57:22.061533 [debug] [Thread-1 (]: Timing info for test.assignment_dbt.not_null_table_b_name.e305c8ae87 (compile): 04:57:22.047671 => 04:57:22.061401
+[0m04:57:22.063682 [debug] [Thread-4 (]: Writing runtime sql for node "test.assignment_dbt.not_null_table_b_age.286df43aec"
+[0m04:57:22.064843 [debug] [Thread-2 (]: Began executing node test.assignment_dbt.not_null_table_b_category.f8e4965633
+[0m04:57:22.066819 [debug] [Thread-3 (]: Writing runtime sql for node "test.assignment_dbt.not_null_table_b_city.6bd702bd47"
+[0m04:57:22.067715 [debug] [Thread-1 (]: Began executing node test.assignment_dbt.not_null_table_b_name.e305c8ae87
+[0m04:57:22.070062 [debug] [Thread-2 (]: Writing runtime sql for node "test.assignment_dbt.not_null_table_b_category.f8e4965633"
+[0m04:57:22.072391 [debug] [Thread-1 (]: Writing runtime sql for node "test.assignment_dbt.not_null_table_b_name.e305c8ae87"
+[0m04:57:22.073512 [debug] [Thread-4 (]: Using postgres connection "test.assignment_dbt.not_null_table_b_age.286df43aec"
+[0m04:57:22.074444 [debug] [Thread-4 (]: On test.assignment_dbt.not_null_table_b_age.286df43aec: BEGIN
+[0m04:57:22.074701 [debug] [Thread-3 (]: Using postgres connection "test.assignment_dbt.not_null_table_b_city.6bd702bd47"
+[0m04:57:22.075498 [debug] [Thread-2 (]: Using postgres connection "test.assignment_dbt.not_null_table_b_category.f8e4965633"
+[0m04:57:22.075709 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m04:57:22.076700 [debug] [Thread-3 (]: On test.assignment_dbt.not_null_table_b_city.6bd702bd47: BEGIN
+[0m04:57:22.077026 [debug] [Thread-1 (]: Using postgres connection "test.assignment_dbt.not_null_table_b_name.e305c8ae87"
+[0m04:57:22.077523 [debug] [Thread-2 (]: On test.assignment_dbt.not_null_table_b_category.f8e4965633: BEGIN
+[0m04:57:22.079473 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m04:57:22.080416 [debug] [Thread-1 (]: On test.assignment_dbt.not_null_table_b_name.e305c8ae87: BEGIN
+[0m04:57:22.081382 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m04:57:22.082165 [debug] [Thread-4 (]: SQL status: BEGIN in 0.0 seconds
+[0m04:57:22.083262 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m04:57:22.084986 [debug] [Thread-4 (]: Using postgres connection "test.assignment_dbt.not_null_table_b_age.286df43aec"
+[0m04:57:22.085659 [debug] [Thread-3 (]: SQL status: BEGIN in 0.0 seconds
+[0m04:57:22.086817 [debug] [Thread-4 (]: On test.assignment_dbt.not_null_table_b_age.286df43aec: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "assignment", "target_name": "dev", "node_id": "test.assignment_dbt.not_null_table_b_age.286df43aec"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select age
+from "testdb"."public"."table_b"
+where age is null
+
+
+
+      
+    ) dbt_internal_test
+[0m04:57:22.087687 [debug] [Thread-3 (]: Using postgres connection "test.assignment_dbt.not_null_table_b_city.6bd702bd47"
+[0m04:57:22.088912 [debug] [Thread-3 (]: On test.assignment_dbt.not_null_table_b_city.6bd702bd47: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "assignment", "target_name": "dev", "node_id": "test.assignment_dbt.not_null_table_b_city.6bd702bd47"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select city
+from "testdb"."public"."table_b"
+where city is null
+
+
+
+      
+    ) dbt_internal_test
+[0m04:57:22.089143 [debug] [Thread-4 (]: SQL status: SELECT 1 in 0.0 seconds
+[0m04:57:22.089596 [debug] [Thread-2 (]: SQL status: BEGIN in 0.0 seconds
+[0m04:57:22.089811 [debug] [Thread-1 (]: SQL status: BEGIN in 0.0 seconds
+[0m04:57:22.090514 [debug] [Thread-3 (]: SQL status: SELECT 1 in 0.0 seconds
+[0m04:57:22.091511 [debug] [Thread-4 (]: Timing info for test.assignment_dbt.not_null_table_b_age.286df43aec (execute): 04:57:22.061979 => 04:57:22.091379
+[0m04:57:22.092454 [debug] [Thread-2 (]: Using postgres connection "test.assignment_dbt.not_null_table_b_category.f8e4965633"
+[0m04:57:22.093355 [debug] [Thread-1 (]: Using postgres connection "test.assignment_dbt.not_null_table_b_name.e305c8ae87"
+[0m04:57:22.094847 [debug] [Thread-3 (]: Timing info for test.assignment_dbt.not_null_table_b_city.6bd702bd47 (execute): 04:57:22.065706 => 04:57:22.094722
+[0m04:57:22.095777 [debug] [Thread-4 (]: On test.assignment_dbt.not_null_table_b_age.286df43aec: ROLLBACK
+[0m04:57:22.096700 [debug] [Thread-2 (]: On test.assignment_dbt.not_null_table_b_category.f8e4965633: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "assignment", "target_name": "dev", "node_id": "test.assignment_dbt.not_null_table_b_category.f8e4965633"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select category
+from "testdb"."public"."table_b"
+where category is null
+
+
+
+      
+    ) dbt_internal_test
+[0m04:57:22.097554 [debug] [Thread-1 (]: On test.assignment_dbt.not_null_table_b_name.e305c8ae87: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "assignment", "target_name": "dev", "node_id": "test.assignment_dbt.not_null_table_b_name.e305c8ae87"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select name
+from "testdb"."public"."table_b"
+where name is null
+
+
+
+      
+    ) dbt_internal_test
+[0m04:57:22.098332 [debug] [Thread-3 (]: On test.assignment_dbt.not_null_table_b_city.6bd702bd47: ROLLBACK
+[0m04:57:22.099323 [debug] [Thread-4 (]: On test.assignment_dbt.not_null_table_b_age.286df43aec: Close
+[0m04:57:22.100364 [debug] [Thread-2 (]: SQL status: SELECT 1 in 0.0 seconds
+[0m04:57:22.101263 [debug] [Thread-1 (]: SQL status: SELECT 1 in 0.0 seconds
+[0m04:57:22.101572 [debug] [Thread-3 (]: On test.assignment_dbt.not_null_table_b_city.6bd702bd47: Close
+[0m04:57:22.102458 [info ] [Thread-4 (]: 7 of 11 PASS not_null_table_b_age .............................................. [[32mPASS[0m in 0.07s]
+[0m04:57:22.103695 [debug] [Thread-2 (]: Timing info for test.assignment_dbt.not_null_table_b_category.f8e4965633 (execute): 04:57:22.069037 => 04:57:22.103567
+[0m04:57:22.105116 [debug] [Thread-1 (]: Timing info for test.assignment_dbt.not_null_table_b_name.e305c8ae87 (execute): 04:57:22.071321 => 04:57:22.104995
+[0m04:57:22.106310 [info ] [Thread-3 (]: 9 of 11 PASS not_null_table_b_city ............................................. [[32mPASS[0m in 0.08s]
+[0m04:57:22.107283 [debug] [Thread-4 (]: Finished running node test.assignment_dbt.not_null_table_b_age.286df43aec
+[0m04:57:22.108219 [debug] [Thread-2 (]: On test.assignment_dbt.not_null_table_b_category.f8e4965633: ROLLBACK
+[0m04:57:22.108982 [debug] [Thread-1 (]: On test.assignment_dbt.not_null_table_b_name.e305c8ae87: ROLLBACK
+[0m04:57:22.110018 [debug] [Thread-3 (]: Finished running node test.assignment_dbt.not_null_table_b_city.6bd702bd47
+[0m04:57:22.111047 [debug] [Thread-4 (]: Began running node test.assignment_dbt.unique_table_b__name_age_text_city_.e60e45c487
+[0m04:57:22.112105 [debug] [Thread-2 (]: On test.assignment_dbt.not_null_table_b_category.f8e4965633: Close
+[0m04:57:22.112906 [debug] [Thread-1 (]: On test.assignment_dbt.not_null_table_b_name.e305c8ae87: Close
+[0m04:57:22.114315 [info ] [Thread-4 (]: 11 of 11 START test unique_table_b__name_age_text_city_ ........................ [RUN]
+[0m04:57:22.115592 [info ] [Thread-2 (]: 8 of 11 PASS not_null_table_b_category ......................................... [[32mPASS[0m in 0.09s]
+[0m04:57:22.116594 [info ] [Thread-1 (]: 10 of 11 PASS not_null_table_b_name ............................................ [[32mPASS[0m in 0.08s]
+[0m04:57:22.117506 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.assignment_dbt.not_null_table_b_age.286df43aec, now test.assignment_dbt.unique_table_b__name_age_text_city_.e60e45c487)
+[0m04:57:22.118735 [debug] [Thread-2 (]: Finished running node test.assignment_dbt.not_null_table_b_category.f8e4965633
+[0m04:57:22.119770 [debug] [Thread-1 (]: Finished running node test.assignment_dbt.not_null_table_b_name.e305c8ae87
+[0m04:57:22.120734 [debug] [Thread-4 (]: Began compiling node test.assignment_dbt.unique_table_b__name_age_text_city_.e60e45c487
+[0m04:57:22.127385 [debug] [Thread-4 (]: Writing injected SQL for node "test.assignment_dbt.unique_table_b__name_age_text_city_.e60e45c487"
+[0m04:57:22.135455 [debug] [Thread-4 (]: Timing info for test.assignment_dbt.unique_table_b__name_age_text_city_.e60e45c487 (compile): 04:57:22.123186 => 04:57:22.135226
+[0m04:57:22.136416 [debug] [Thread-4 (]: Began executing node test.assignment_dbt.unique_table_b__name_age_text_city_.e60e45c487
+[0m04:57:22.138388 [debug] [Thread-4 (]: Writing runtime sql for node "test.assignment_dbt.unique_table_b__name_age_text_city_.e60e45c487"
+[0m04:57:22.146282 [debug] [Thread-4 (]: Using postgres connection "test.assignment_dbt.unique_table_b__name_age_text_city_.e60e45c487"
+[0m04:57:22.147229 [debug] [Thread-4 (]: On test.assignment_dbt.unique_table_b__name_age_text_city_.e60e45c487: BEGIN
+[0m04:57:22.148121 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m04:57:22.152786 [debug] [Thread-4 (]: SQL status: BEGIN in 0.0 seconds
+[0m04:57:22.153675 [debug] [Thread-4 (]: Using postgres connection "test.assignment_dbt.unique_table_b__name_age_text_city_.e60e45c487"
+[0m04:57:22.154941 [debug] [Thread-4 (]: On test.assignment_dbt.unique_table_b__name_age_text_city_.e60e45c487: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "assignment", "target_name": "dev", "node_id": "test.assignment_dbt.unique_table_b__name_age_text_city_.e60e45c487"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+select
+    (name || '|' || age::text || '|' || city) as unique_field,
+    count(*) as n_records
+
+from "testdb"."public"."table_b"
+where (name || '|' || age::text || '|' || city) is not null
+group by (name || '|' || age::text || '|' || city)
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m04:57:22.156792 [debug] [Thread-4 (]: SQL status: SELECT 1 in 0.0 seconds
+[0m04:57:22.158285 [debug] [Thread-4 (]: Timing info for test.assignment_dbt.unique_table_b__name_age_text_city_.e60e45c487 (execute): 04:57:22.137220 => 04:57:22.158162
+[0m04:57:22.159210 [debug] [Thread-4 (]: On test.assignment_dbt.unique_table_b__name_age_text_city_.e60e45c487: ROLLBACK
+[0m04:57:22.160089 [debug] [Thread-4 (]: On test.assignment_dbt.unique_table_b__name_age_text_city_.e60e45c487: Close
+[0m04:57:22.161234 [info ] [Thread-4 (]: 11 of 11 PASS unique_table_b__name_age_text_city_ .............................. [[32mPASS[0m in 0.04s]
+[0m04:57:22.162297 [debug] [Thread-4 (]: Finished running node test.assignment_dbt.unique_table_b__name_age_text_city_.e60e45c487
+[0m04:57:22.164337 [debug] [MainThread]: Using postgres connection "master"
+[0m04:57:22.165198 [debug] [MainThread]: On master: BEGIN
+[0m04:57:22.165945 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m04:57:22.170125 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m04:57:22.170942 [debug] [MainThread]: On master: COMMIT
+[0m04:57:22.171790 [debug] [MainThread]: Using postgres connection "master"
+[0m04:57:22.172672 [debug] [MainThread]: On master: COMMIT
+[0m04:57:22.173621 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m04:57:22.174435 [debug] [MainThread]: On master: Close
+[0m04:57:22.175432 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m04:57:22.176263 [debug] [MainThread]: Connection 'test.assignment_dbt.not_null_table_b_name.e305c8ae87' was properly closed.
+[0m04:57:22.177013 [debug] [MainThread]: Connection 'test.assignment_dbt.not_null_table_b_category.f8e4965633' was properly closed.
+[0m04:57:22.177784 [debug] [MainThread]: Connection 'test.assignment_dbt.unique_table_b__name_age_text_city_.e60e45c487' was properly closed.
+[0m04:57:22.178513 [debug] [MainThread]: Connection 'test.assignment_dbt.not_null_table_b_city.6bd702bd47' was properly closed.
+[0m04:57:22.179437 [info ] [MainThread]: 
+[0m04:57:22.180384 [info ] [MainThread]: Finished running 1 seed, 1 view model, 8 tests, 1 table model in 0 hours 0 minutes and 0.54 seconds (0.54s).
+[0m04:57:22.181998 [debug] [MainThread]: Command end result
+[0m04:57:22.200539 [info ] [MainThread]: 
+[0m04:57:22.201845 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m04:57:22.203043 [info ] [MainThread]: 
+[0m04:57:22.204309 [info ] [MainThread]: Done. PASS=11 WARN=0 ERROR=0 SKIP=0 TOTAL=11
+[0m04:57:22.206481 [debug] [MainThread]: Resource report: {"command_name": "build", "command_success": true, "command_wall_clock_time": 0.87242985, "process_user_time": 1.399251, "process_kernel_time": 0.11194, "process_mem_max_rss": "121536", "process_out_blocks": "1968", "process_in_blocks": "0"}
+[0m04:57:22.210442 [debug] [MainThread]: Command `dbt build` succeeded at 04:57:22.210336 after 0.88 seconds
+[0m04:57:22.211707 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x78559aad9190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x78559b65c190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x78559f6b52d0>]}
+[0m04:57:22.212658 [debug] [MainThread]: Flushing usage events
