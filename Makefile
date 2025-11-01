@@ -1,10 +1,12 @@
 .PHONY: all up schema seed show app test down clean \
-        dbt-init dbt-deps dbt-seed dbt-run dbt-test dbt-build dbt-clean dbt-docs
+        dbt-init dbt-seed dbt-run dbt-test dbt-build dbt-clean dbt-docs
 
 # -----------------------------------------------------------------------------
-# PRIMARY WORKFLOW (SQL + Python)
+# PRIMARY WORKFLOW (SQL + Python + DBT)
 # -----------------------------------------------------------------------------
-all: up schema seed show app test
+
+
+all: up schema seed app test dbt-build show
 
 up:
 	docker compose up -d
@@ -37,7 +39,6 @@ clean:
 # -----------------------------------------------------------------------------
 .PHONY: dbt-init dbt-seed dbt-run dbt-test dbt-build dbt-clean dbt-docs
 
-# (optional) one-time check
 dbt-init:
 	docker compose run --rm app bash -lc "python -m pip install -U pip && pip install -r requirements.txt && dbt --version"
 
@@ -50,6 +51,7 @@ dbt-run:
 dbt-test:
 	docker compose run --rm app bash -lc "pip install -r requirements.txt && dbt test --project-dir /project --profiles-dir /.dbt"
 
+# dbt-build runs dbt seed + run + test in one go
 dbt-build:
 	docker compose run --rm app bash -lc "pip install -r requirements.txt && dbt build --project-dir /project --profiles-dir /.dbt"
 
