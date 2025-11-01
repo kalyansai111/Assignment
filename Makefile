@@ -5,10 +5,6 @@
 # PRIMARY WORKFLOW (SQL + Python + DBT)
 # -----------------------------------------------------------------------------
 
-<<<<<<< HEAD
-=======
-
->>>>>>> edcf83ee1ec7221742634878d5b55e2bd6da372d
 all: up schema seed app test dbt-build show
 
 up:
